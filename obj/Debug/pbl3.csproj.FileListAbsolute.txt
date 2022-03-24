@@ -1,0 +1,15 @@
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\bin\Debug\pbl3.exe.config
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\bin\Debug\pbl3.exe
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\bin\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.csproj.AssemblyReference.cache
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.Properties.Resources.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.csproj.GenerateResource.cache
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.csproj.CoreCompileInputs.cache
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.exe
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.DuLieu.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.Admin.DuLieu.LoaiManHinh.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.Admin1.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.Admin.DuLieu.PhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\pbl3\obj\Debug\pbl3.Admin.DuLieu.TheLoai.resources
