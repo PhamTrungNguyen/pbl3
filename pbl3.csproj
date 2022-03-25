@@ -52,11 +52,29 @@
     <Compile Include="Admin1.Designer.cs">
       <DependentUpon>Admin1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DuLieu\DinhDang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\DuLieu\DinhDang.Designer.cs">
+      <DependentUpon>DinhDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DuLieu\LichChieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\DuLieu\LichChieu.Designer.cs">
+      <DependentUpon>LichChieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DuLieu\LoaiManHinh.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Admin\DuLieu\LoaiManHinh.Designer.cs">
       <DependentUpon>LoaiManHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DuLieu\Phim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\DuLieu\Phim.Designer.cs">
+      <DependentUpon>Phim.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\DuLieu\PhongChieu.cs">
       <SubType>UserControl</SubType>
@@ -141,8 +159,17 @@
     <EmbeddedResource Include="Admin1.resx">
       <DependentUpon>Admin1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuLieu\DinhDang.resx">
+      <DependentUpon>DinhDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuLieu\LichChieu.resx">
+      <DependentUpon>LichChieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\DuLieu\LoaiManHinh.resx">
       <DependentUpon>LoaiManHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuLieu\Phim.resx">
+      <DependentUpon>Phim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\DuLieu\PhongChieu.resx">
       <DependentUpon>PhongChieu.cs</DependentUpon>

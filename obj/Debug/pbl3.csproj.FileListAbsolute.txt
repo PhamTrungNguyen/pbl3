@@ -76,3 +76,12 @@ C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.NhanVie
 C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.ThongTinTaiKhoan.ThongTinTaiKhoan.resources
 C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.frmPhongChieu.resources
 C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.frmBang.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.KhachHang.KhachHang.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.NhanVien.NhanVien.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.ThongTinTaiKhoan.ThongTinTaiKhoan.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.DoanhThu.DoanhThu.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.frmBang.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.frmPhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.DuLieu.Phim.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.DuLieu.DinhDang.resources
+C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.Admin.DuLieu.LichChieu.resources

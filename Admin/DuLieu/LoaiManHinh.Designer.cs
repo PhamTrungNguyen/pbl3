@@ -31,14 +31,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtgManHinh = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnManHinhXem = new System.Windows.Forms.Button();
             this.txttxtManHinhTen = new System.Windows.Forms.TextBox();
+            this.BtnManHinhSua = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.BtnManHinhXoa = new System.Windows.Forms.Button();
+            this.BtnManHinhThem = new System.Windows.Forms.Button();
             this.txtManHinhMa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnManHinhThem = new System.Windows.Forms.Button();
-            this.BtnManHinhXoa = new System.Windows.Forms.Button();
-            this.BtnManHinhXem = new System.Windows.Forms.Button();
-            this.BtnManHinhSua = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgManHinh)).BeginInit();
             this.panel2.SuspendLayout();
@@ -48,9 +48,9 @@
             // 
             this.panel1.Controls.Add(this.dtgManHinh);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(386, 0);
+            this.panel1.Location = new System.Drawing.Point(414, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(655, 639);
+            this.panel1.Size = new System.Drawing.Size(627, 639);
             this.panel1.TabIndex = 0;
             // 
             // dtgManHinh
@@ -61,7 +61,7 @@
             this.dtgManHinh.Name = "dtgManHinh";
             this.dtgManHinh.RowHeadersWidth = 62;
             this.dtgManHinh.RowTemplate.Height = 28;
-            this.dtgManHinh.Size = new System.Drawing.Size(655, 639);
+            this.dtgManHinh.Size = new System.Drawing.Size(627, 639);
             this.dtgManHinh.TabIndex = 0;
             // 
             // panel2
@@ -78,8 +78,18 @@
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(386, 639);
+            this.panel2.Size = new System.Drawing.Size(414, 639);
             this.panel2.TabIndex = 1;
+            // 
+            // BtnManHinhXem
+            // 
+            this.BtnManHinhXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManHinhXem.Location = new System.Drawing.Point(49, 289);
+            this.BtnManHinhXem.Name = "BtnManHinhXem";
+            this.BtnManHinhXem.Size = new System.Drawing.Size(106, 45);
+            this.BtnManHinhXem.TabIndex = 2;
+            this.BtnManHinhXem.Text = "Xem";
+            this.BtnManHinhXem.UseVisualStyleBackColor = true;
             // 
             // txttxtManHinhTen
             // 
@@ -88,14 +98,45 @@
             this.txttxtManHinhTen.Size = new System.Drawing.Size(262, 35);
             this.txttxtManHinhTen.TabIndex = 3;
             // 
+            // BtnManHinhSua
+            // 
+            this.BtnManHinhSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManHinhSua.Location = new System.Drawing.Point(163, 289);
+            this.BtnManHinhSua.Name = "BtnManHinhSua";
+            this.BtnManHinhSua.Size = new System.Drawing.Size(106, 45);
+            this.BtnManHinhSua.TabIndex = 2;
+            this.BtnManHinhSua.Text = "Sửa";
+            this.BtnManHinhSua.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 29);
+            this.label2.Size = new System.Drawing.Size(185, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên màn hình :";
+            // 
+            // BtnManHinhXoa
+            // 
+            this.BtnManHinhXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManHinhXoa.Location = new System.Drawing.Point(163, 224);
+            this.BtnManHinhXoa.Name = "BtnManHinhXoa";
+            this.BtnManHinhXoa.Size = new System.Drawing.Size(106, 45);
+            this.BtnManHinhXoa.TabIndex = 2;
+            this.BtnManHinhXoa.Text = "Xóa";
+            this.BtnManHinhXoa.UseVisualStyleBackColor = true;
+            // 
+            // BtnManHinhThem
+            // 
+            this.BtnManHinhThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManHinhThem.Location = new System.Drawing.Point(49, 224);
+            this.BtnManHinhThem.Name = "BtnManHinhThem";
+            this.BtnManHinhThem.Size = new System.Drawing.Size(106, 45);
+            this.BtnManHinhThem.TabIndex = 2;
+            this.BtnManHinhThem.Text = "Thêm";
+            this.BtnManHinhThem.UseVisualStyleBackColor = true;
             // 
             // txtManHinhMa
             // 
@@ -108,51 +149,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 29);
+            this.label1.Size = new System.Drawing.Size(231, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Loại màn hình :";
-            // 
-            // BtnManHinhThem
-            // 
-            this.BtnManHinhThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnManHinhThem.Location = new System.Drawing.Point(49, 224);
-            this.BtnManHinhThem.Name = "BtnManHinhThem";
-            this.BtnManHinhThem.Size = new System.Drawing.Size(106, 45);
-            this.BtnManHinhThem.TabIndex = 2;
-            this.BtnManHinhThem.Text = "Thêm";
-            this.BtnManHinhThem.UseVisualStyleBackColor = true;
-            // 
-            // BtnManHinhXoa
-            // 
-            this.BtnManHinhXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnManHinhXoa.Location = new System.Drawing.Point(163, 224);
-            this.BtnManHinhXoa.Name = "BtnManHinhXoa";
-            this.BtnManHinhXoa.Size = new System.Drawing.Size(106, 45);
-            this.BtnManHinhXoa.TabIndex = 2;
-            this.BtnManHinhXoa.Text = "Xóa";
-            this.BtnManHinhXoa.UseVisualStyleBackColor = true;
-            // 
-            // BtnManHinhXem
-            // 
-            this.BtnManHinhXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnManHinhXem.Location = new System.Drawing.Point(49, 289);
-            this.BtnManHinhXem.Name = "BtnManHinhXem";
-            this.BtnManHinhXem.Size = new System.Drawing.Size(106, 45);
-            this.BtnManHinhXem.TabIndex = 2;
-            this.BtnManHinhXem.Text = "Xem";
-            this.BtnManHinhXem.UseVisualStyleBackColor = true;
-            // 
-            // BtnManHinhSua
-            // 
-            this.BtnManHinhSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnManHinhSua.Location = new System.Drawing.Point(163, 289);
-            this.BtnManHinhSua.Name = "BtnManHinhSua";
-            this.BtnManHinhSua.Size = new System.Drawing.Size(106, 45);
-            this.BtnManHinhSua.TabIndex = 2;
-            this.BtnManHinhSua.Text = "Sửa";
-            this.BtnManHinhSua.UseVisualStyleBackColor = true;
             // 
             // LoaiManHinh
             // 

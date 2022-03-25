@@ -24,7 +24,11 @@ namespace pbl3
 
         private void btnPhim_Click(object sender, EventArgs e)
         {
-
+            this.Text = "Loại Màn Hình";
+            pbDuLieu.Controls.Clear();
+            Phim phim = new Phim();
+            phim.Dock = DockStyle.Fill;
+            pbDuLieu.Controls.Add(phim);
         }
 
         private void btnLoaiManHinh_Click(object sender, EventArgs e)
@@ -40,9 +44,36 @@ namespace pbl3
         {
             this.Text = "Phòng Chiếu";
             pbDuLieu.Controls.Clear();
-            PhongChieu duLieu = new PhongChieu();
-            duLieu.Dock = DockStyle.Fill;
-            pbDuLieu.Controls.Add(duLieu);
+            PhongChieu phongChieu = new PhongChieu();
+            phongChieu.Dock = DockStyle.Fill;
+            pbDuLieu.Controls.Add(phongChieu);
+        }
+
+        private void btnTheLoai_Click(object sender, EventArgs e)
+        {
+            this.Text = "Thể Loại";
+            pbDuLieu.Controls.Clear();
+            TheLoai theLoai = new TheLoai();
+            theLoai.Dock = DockStyle.Fill;
+            pbDuLieu.Controls.Add(theLoai);
+        }
+
+        private void btnDinhDang_Click(object sender, EventArgs e)
+        {
+            this.Text = "Định Dạng";
+            pbDuLieu.Controls.Clear();
+            DinhDang dinhDang = new DinhDang();
+            dinhDang.Dock = DockStyle.Fill;
+            pbDuLieu.Controls.Add(dinhDang);
+        }
+
+        private void btnLichChieu_Click(object sender, EventArgs e)
+        {
+            this.Text = "Lịch Chiếu";
+            pbDuLieu.Controls.Clear();
+            LichChieu lichChieu = new LichChieu();
+            lichChieu.Dock = DockStyle.Fill;
+            pbDuLieu.Controls.Add(lichChieu);
         }
     }
 }

@@ -62,6 +62,7 @@
             this.btnLichChieu.TabIndex = 0;
             this.btnLichChieu.Text = "Lịch Chiếu";
             this.btnLichChieu.UseVisualStyleBackColor = true;
+            this.btnLichChieu.Click += new System.EventHandler(this.btnLichChieu_Click);
             // 
             // btnDinhDang
             // 
@@ -71,6 +72,7 @@
             this.btnDinhDang.TabIndex = 0;
             this.btnDinhDang.Text = "Định Dạng";
             this.btnDinhDang.UseVisualStyleBackColor = true;
+            this.btnDinhDang.Click += new System.EventHandler(this.btnDinhDang_Click);
             // 
             // btnPhim
             // 
@@ -90,6 +92,7 @@
             this.btnTheLoai.TabIndex = 0;
             this.btnTheLoai.Text = "Thể Loại";
             this.btnTheLoai.UseVisualStyleBackColor = true;
+            this.btnTheLoai.Click += new System.EventHandler(this.btnTheLoai_Click);
             // 
             // btnPhongChieu
             // 
