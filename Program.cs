@@ -16,7 +16,7 @@ namespace pbl3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin1());
+            Application.Run(new DangNhap());
         }
     }
 }
