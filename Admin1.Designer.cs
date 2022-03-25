@@ -35,9 +35,9 @@
             this.btnDuLieu = new System.Windows.Forms.Button();
             this.btnDanhThu = new System.Windows.Forms.Button();
             this.pn = new System.Windows.Forms.Panel();
+            this.pnAdmin = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnAdmin = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.pn.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,6 +70,7 @@
             this.btnNhanVien.TabIndex = 0;
             this.btnNhanVien.Text = "Nhân Viên";
             this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             this.btnNhanVien.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnNhanVien_MouseClick);
             // 
             // btnTaiKhoan
@@ -83,6 +84,7 @@
             this.btnTaiKhoan.TabIndex = 0;
             this.btnTaiKhoan.Text = "Tài Khoản";
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             this.btnTaiKhoan.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnTaiKhoan_MouseClick);
             // 
             // btnKhachHang
@@ -96,6 +98,7 @@
             this.btnKhachHang.TabIndex = 0;
             this.btnKhachHang.Text = "Khách Hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             this.btnKhachHang.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnKhachHang_MouseClick);
             // 
             // btnDuLieu
@@ -123,6 +126,7 @@
             this.btnDanhThu.TabIndex = 0;
             this.btnDanhThu.Text = "Doanh Thu";
             this.btnDanhThu.UseVisualStyleBackColor = false;
+            this.btnDanhThu.Click += new System.EventHandler(this.btnDanhThu_Click);
             this.btnDanhThu.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnDanhThu_MouseClick);
             // 
             // pn
@@ -134,6 +138,14 @@
             this.pn.Name = "pn";
             this.pn.Size = new System.Drawing.Size(750, 602);
             this.pn.TabIndex = 1;
+            // 
+            // pnAdmin
+            // 
+            this.pnAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnAdmin.Location = new System.Drawing.Point(0, 80);
+            this.pnAdmin.Name = "pnAdmin";
+            this.pnAdmin.Size = new System.Drawing.Size(750, 522);
+            this.pnAdmin.TabIndex = 1;
             // 
             // panel2
             // 
@@ -156,15 +168,7 @@
             this.label1.Text = "Chào Mừng Đến Với Chương Trình Quản Lý Rạp Chiếu Phim";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnAdmin
-            // 
-            this.pnAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnAdmin.Location = new System.Drawing.Point(0, 80);
-            this.pnAdmin.Name = "pnAdmin";
-            this.pnAdmin.Size = new System.Drawing.Size(750, 522);
-            this.pnAdmin.TabIndex = 1;
-            // 
-            // Admin
+            // Admin1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,7 +177,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Admin";
+            this.Name = "Admin1";
             this.Text = "Admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);

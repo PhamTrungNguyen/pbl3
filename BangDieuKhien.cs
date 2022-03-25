@@ -26,5 +26,17 @@ namespace pbl3
             this.Show();
             btnRest.Enabled = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin1 admin1 = new Admin1();
+            admin1.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmBang frmBang = new frmBang();
+            frmBang.ShowDialog();
+        }
     }
 }

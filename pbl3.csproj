@@ -70,6 +70,24 @@
     <Compile Include="Admin\DuLieu\TheLoai.Designer.cs">
       <DependentUpon>TheLoai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\KhachHang\KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\KhachHang\KhachHang.designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NhanVien\NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\NhanVien\NhanVien.designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.designer.cs">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="BangDieuKhien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +106,29 @@
     <Compile Include="Database.Designer.cs">
       <DependentUpon>Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DoanhThuu\DoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\DoanhThuu\DoanhThu.designer.cs">
+      <DependentUpon>DoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBang.designer.cs">
+      <DependentUpon>frmBang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhongChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhongChieu.designer.cs">
+      <DependentUpon>frmPhongChieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +150,15 @@
     <EmbeddedResource Include="Admin\DuLieu\TheLoai.resx">
       <DependentUpon>TheLoai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\KhachHang\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\NhanVien\NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.resx">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BangDieuKhien.resx">
       <DependentUpon>BangDieuKhien.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,8 +168,17 @@
     <EmbeddedResource Include="Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DoanhThuu\DoanhThu.resx">
+      <DependentUpon>DoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBang.resx">
+      <DependentUpon>frmBang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhongChieu.resx">
+      <DependentUpon>frmPhongChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

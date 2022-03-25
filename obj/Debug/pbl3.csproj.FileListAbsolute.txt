@@ -51,3 +51,28 @@ C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.csproj
 C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.csproj.CoreCompileInputs.cache
 C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.exe
 C:\Users\Win 10 Pro\Desktop\102200101_PhamTrungNguyen\pbl3\obj\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\bin\Debug\pbl3.exe.config
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\bin\Debug\pbl3.exe
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\bin\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.csproj.AssemblyReference.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin1.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LoaiManHinh.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.PhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.TheLoai.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.BangDieuKhien.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.DangNhap.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Database.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.DoanhThu.DoanhThu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.DoiMatKhau.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Properties.Resources.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.DuLieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.csproj.GenerateResource.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.csproj.CoreCompileInputs.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.exe
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.KhachHang.KhachHang.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.NhanVien.NhanVien.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.Admin.ThongTinTaiKhoan.ThongTinTaiKhoan.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.frmPhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (1)\pbl3-main\obj\Debug\pbl3.frmBang.resources

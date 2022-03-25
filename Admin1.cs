@@ -1,4 +1,8 @@
-﻿using System;
+﻿using pbl3.Admin.DoanhThu;
+using pbl3.Admin.KhachHang;
+using pbl3.Admin.NhanVien;
+using pbl3.Admin.ThongTinTaiKhoan;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,6 +78,42 @@ namespace pbl3
             btnKhachHang.BackColor = Color.Aqua;
 
             btnTaiKhoan.BackColor = Color.Red;
+        }
+
+        private void btnDanhThu_Click(object sender, EventArgs e)
+        {
+            this.Text = "Doanh Thu";
+            pnAdmin.Controls.Clear();
+            DoanhThu duLieu = new DoanhThu();
+            duLieu.Dock = DockStyle.Fill;
+            pnAdmin.Controls.Add(duLieu);
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            this.Text = "Thông tin khách hàng";
+            pnAdmin.Controls.Clear();
+            KhachHang duLieu = new KhachHang();
+            duLieu.Dock = DockStyle.Fill;
+            pnAdmin.Controls.Add(duLieu);
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            this.Text = "Thông tin nhân viên";
+            pnAdmin.Controls.Clear();
+            NhanVien duLieu = new NhanVien();
+            duLieu.Dock = DockStyle.Fill;
+            pnAdmin.Controls.Add(duLieu);
+        }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            this.Text = "Thông tin tài khoản";
+            pnAdmin.Controls.Clear();
+            ThongTinTaiKhoan duLieu = new ThongTinTaiKhoan();
+            duLieu.Dock = DockStyle.Fill;
+            pnAdmin.Controls.Add(duLieu);
         }
     }
 }
