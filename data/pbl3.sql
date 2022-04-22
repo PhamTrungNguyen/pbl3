@@ -1,4 +1,4 @@
-CREATE DATABASE pbl3
+﻿CREATE DATABASE pbl3
 GO
 
 USE pbl3
@@ -124,4 +124,45 @@ CREATE TABLE [dbo].[Ve] (
 );
 
 GO
+--PHIM
+CREATE PROC USP_GetMovie
+AS
+BEGIN
+	SELECT IDPhim AS [Mã phim], TenPhim AS [Tên phim], ThoiLuong AS [Thời lượng], NgayKhoiChieu AS [Ngày khởi chiếu], NgayKetThuc AS [Ngày kết thúc], SanXuat AS [Sản xuất], DaoDien AS [Đạo diễn], NamSX AS [Năm SX]
+	FROM dbo.Phim
+END
+GO
 
+-- thêm phim
+CREATE PROC USP_InsertMovie
+@id VARCHAR(50), @tenPhim NVARCHAR(100), @moTa NVARCHAR(1000), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien NVARCHAR(100), @namSX INT, @apPhich IMAGE
+AS
+BEGIN
+	INSERT dbo.Phim (IDPhim , TenPhim , ThoiLuong , NgayKhoiChieu , NgayKetThuc , SanXuat , DaoDien , NamSX)
+	VALUES (@id , @tenPhim  , @thoiLuong , @ngayKhoiChieu , @ngayKetThuc , @sanXuat , @daoDien , @namSX)
+END
+GO
+
+-- sữa phim CREATE PROC
+alter proc USP_UpdateMovie
+@id VARCHAR(50), @tenPhim nvarchar(50), @moTa nvarchar(50), @thoiLuong nvarchar(50), @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien nvarchar(50), @namSX int
+AS
+BEGIN
+	UPDATE dbo.Phim SET TenPhim = @tenPhim, ThoiLuong = @thoiLuong, NgayKhoiChieu = @ngayKhoiChieu, NgayKetThuc = @ngayKetThuc, SanXuat = @sanXuat, DaoDien = @daoDien, NamSX = @namSX  WHERE IDPhim = @id
+END
+GO
+
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL01', N'Hành Động', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL02', N'Hoạt Hình', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL03', N'Hài', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL04', N'Viễn Tưởng', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL05', N'Phiêu lưu', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL06', N'Gia đình', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL07', N'Tình Cảm', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL08', N'Tâm Lý', NULL)
+
+
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P01', N'Avengers: Cuộc Chiến Vô Cực',  150, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Anthony Russo,  Joe Russo', 2018)
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P02', N'Lật Mặt: 3 Chàng Khuyết',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Lý Hải', 2018)
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P03', N'100 Ngày Bên Em',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Vũ Ngọc Phượng', 2018)
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P04', N'Ngỗng Vịt Phiêu Lưu Ký', 91, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Christopher Jenkins', 2018)

@@ -118,6 +118,9 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\GenreDAO.cs" />
+    <Compile Include="DAO\MovieDAO.cs" />
     <Compile Include="Database.cs">
       <SubType>Form</SubType>
     </Compile>

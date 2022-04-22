@@ -18,6 +18,7 @@ namespace pbl3.Properties
     {
 
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
+        internal string connectionSTR;
 
         public static Settings Default
         {

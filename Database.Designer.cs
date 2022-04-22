@@ -30,12 +30,12 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLuuKetNoi = new System.Windows.Forms.Button();
+            this.btnDataThoat = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtuserName = new System.Windows.Forms.TextBox();
+            this.txtdataName = new System.Windows.Forms.TextBox();
+            this.txtserverName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,12 +62,12 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Yellow;
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox4);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox3);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.btnLuuKetNoi);
+            this.splitContainer1.Panel2.Controls.Add(this.btnDataThoat);
+            this.splitContainer1.Panel2.Controls.Add(this.txtPassword);
+            this.splitContainer1.Panel2.Controls.Add(this.txtuserName);
+            this.splitContainer1.Panel2.Controls.Add(this.txtdataName);
+            this.splitContainer1.Panel2.Controls.Add(this.txtserverName);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
@@ -88,65 +88,66 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Thiết lập kết nối cơ sở dữ liệu";
             // 
-            // button2
+            // btnLuuKetNoi
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(374, 236);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 50);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Lưu và kết nối";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLuuKetNoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLuuKetNoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuKetNoi.ForeColor = System.Drawing.Color.White;
+            this.btnLuuKetNoi.Location = new System.Drawing.Point(374, 236);
+            this.btnLuuKetNoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLuuKetNoi.Name = "btnLuuKetNoi";
+            this.btnLuuKetNoi.Size = new System.Drawing.Size(218, 50);
+            this.btnLuuKetNoi.TabIndex = 9;
+            this.btnLuuKetNoi.Text = "Lưu và kết nối";
+            this.btnLuuKetNoi.UseVisualStyleBackColor = false;
+            this.btnLuuKetNoi.Click += new System.EventHandler(this.btnLuuKetNoi_Click);
             // 
-            // button1
+            // btnDataThoat
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(267, 236);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 50);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Đóng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDataThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDataThoat.Location = new System.Drawing.Point(267, 236);
+            this.btnDataThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDataThoat.Name = "btnDataThoat";
+            this.btnDataThoat.Size = new System.Drawing.Size(84, 50);
+            this.btnDataThoat.TabIndex = 8;
+            this.btnDataThoat.Text = "Đóng";
+            this.btnDataThoat.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtPassword
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(267, 166);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(325, 31);
-            this.textBox4.TabIndex = 7;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(267, 166);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(325, 31);
+            this.txtPassword.TabIndex = 7;
             // 
-            // textBox3
+            // txtuserName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(267, 122);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(325, 31);
-            this.textBox3.TabIndex = 6;
+            this.txtuserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuserName.Location = new System.Drawing.Point(267, 122);
+            this.txtuserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtuserName.Name = "txtuserName";
+            this.txtuserName.Size = new System.Drawing.Size(325, 31);
+            this.txtuserName.TabIndex = 6;
             // 
-            // textBox2
+            // txtdataName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(267, 80);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(325, 31);
-            this.textBox2.TabIndex = 5;
+            this.txtdataName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdataName.Location = new System.Drawing.Point(267, 80);
+            this.txtdataName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtdataName.Name = "txtdataName";
+            this.txtdataName.Size = new System.Drawing.Size(325, 31);
+            this.txtdataName.TabIndex = 5;
             // 
-            // textBox1
+            // txtserverName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(267, 38);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 31);
-            this.textBox1.TabIndex = 4;
+            this.txtserverName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtserverName.Location = new System.Drawing.Point(267, 38);
+            this.txtserverName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtserverName.Name = "txtserverName";
+            this.txtserverName.Size = new System.Drawing.Size(325, 31);
+            this.txtserverName.TabIndex = 4;
             // 
             // label5
             // 
@@ -212,12 +213,12 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnLuuKetNoi;
+        private System.Windows.Forms.Button btnDataThoat;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtuserName;
+        private System.Windows.Forms.TextBox txtdataName;
+        private System.Windows.Forms.TextBox txtserverName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

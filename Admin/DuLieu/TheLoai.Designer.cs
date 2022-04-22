@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTheLoaiMa = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtTheLoaiTen = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTheLoaiMoTa = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTheLoaiThemXem = new System.Windows.Forms.Button();
             this.btnTheLoaiThemXoa = new System.Windows.Forms.Button();
             this.btnTheLoaiThemSua = new System.Windows.Forms.Button();
             this.btnTheLoaiThem = new System.Windows.Forms.Button();
+            this.txtTheLoaiMoTa = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTheLoaiTen = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTheLoaiMa = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvTheLoai = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoai)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,78 +64,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(353, 661);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(353, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(703, 661);
-            this.panel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã thể loại:";
-            // 
-            // txtTheLoaiMa
-            // 
-            this.txtTheLoaiMa.Location = new System.Drawing.Point(27, 50);
-            this.txtTheLoaiMa.Name = "txtTheLoaiMa";
-            this.txtTheLoaiMa.Size = new System.Drawing.Size(187, 30);
-            this.txtTheLoaiMa.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên thể loại:";
-            // 
-            // txtTheLoaiTen
-            // 
-            this.txtTheLoaiTen.Location = new System.Drawing.Point(27, 142);
-            this.txtTheLoaiTen.Name = "txtTheLoaiTen";
-            this.txtTheLoaiTen.Size = new System.Drawing.Size(187, 30);
-            this.txtTheLoaiTen.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 200);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mô tả :";
-            // 
-            // txtTheLoaiMoTa
-            // 
-            this.txtTheLoaiMoTa.Location = new System.Drawing.Point(27, 228);
-            this.txtTheLoaiMoTa.Multiline = true;
-            this.txtTheLoaiMoTa.Name = "txtTheLoaiMoTa";
-            this.txtTheLoaiMoTa.Size = new System.Drawing.Size(320, 145);
-            this.txtTheLoaiMoTa.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(703, 661);
-            this.dataGridView1.TabIndex = 0;
             // 
             // btnTheLoaiThemXem
             // 
@@ -173,6 +101,78 @@
             this.btnTheLoaiThem.Text = "Thêm";
             this.btnTheLoaiThem.UseVisualStyleBackColor = true;
             // 
+            // txtTheLoaiMoTa
+            // 
+            this.txtTheLoaiMoTa.Location = new System.Drawing.Point(27, 228);
+            this.txtTheLoaiMoTa.Multiline = true;
+            this.txtTheLoaiMoTa.Name = "txtTheLoaiMoTa";
+            this.txtTheLoaiMoTa.Size = new System.Drawing.Size(320, 145);
+            this.txtTheLoaiMoTa.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(22, 200);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Mô tả :";
+            // 
+            // txtTheLoaiTen
+            // 
+            this.txtTheLoaiTen.Location = new System.Drawing.Point(27, 142);
+            this.txtTheLoaiTen.Name = "txtTheLoaiTen";
+            this.txtTheLoaiTen.Size = new System.Drawing.Size(187, 30);
+            this.txtTheLoaiTen.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên thể loại:";
+            // 
+            // txtTheLoaiMa
+            // 
+            this.txtTheLoaiMa.Location = new System.Drawing.Point(27, 50);
+            this.txtTheLoaiMa.Name = "txtTheLoaiMa";
+            this.txtTheLoaiMa.Size = new System.Drawing.Size(187, 30);
+            this.txtTheLoaiMa.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã thể loại:";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvTheLoai);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(353, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(703, 661);
+            this.panel2.TabIndex = 1;
+            // 
+            // dgvTheLoai
+            // 
+            this.dgvTheLoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTheLoai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTheLoai.Location = new System.Drawing.Point(0, 0);
+            this.dgvTheLoai.Name = "dgvTheLoai";
+            this.dgvTheLoai.RowHeadersWidth = 62;
+            this.dgvTheLoai.RowTemplate.Height = 28;
+            this.dgvTheLoai.Size = new System.Drawing.Size(703, 661);
+            this.dgvTheLoai.TabIndex = 0;
+            // 
             // TheLoai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -184,7 +184,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoai)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,7 +199,7 @@
         private System.Windows.Forms.TextBox txtTheLoaiMa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTheLoai;
         private System.Windows.Forms.Button btnTheLoaiThemXem;
         private System.Windows.Forms.Button btnTheLoaiThemXoa;
         private System.Windows.Forms.Button btnTheLoaiThemSua;
