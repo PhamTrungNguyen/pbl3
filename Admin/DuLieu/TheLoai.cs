@@ -13,28 +13,28 @@ namespace pbl3.Admin.DuLieu
 {
     public partial class TheLoai : UserControl
     {
-        //BindingSource genreList = new BindingSource();
-        //GenreDAO genreDao = new GenreDAO();
-        //public TheLoai()
-        //{
-        //    InitializeComponent();
-        //    LoadGenre();
-        //}
-        //void LoadGenre()
-        //{
-        //    dgvTheLoai.DataSource = genreList;
-        //    LoadGenreList();
-        //    AddGenreBinding();
-        //}
-        //void LoadGenreList()
-        //{
-        //    genreList.DataSource = genreDao.GetGenre();
-        //}
-        //void AddGenreBinding()
-        //{
-        //    txtTheLoaiMa.DataBindings.Add("Text", dgvTheLoai.DataSource, "Mã thể loại", true, DataSourceUpdateMode.Never);
-        //    txtTheLoaiTen.DataBindings.Add("Text", dgvTheLoai.DataSource, "Tên thể loại", true, DataSourceUpdateMode.Never);
-        //    txtTheLoaiMoTa.DataBindings.Add("Text", dgvTheLoai.DataSource, "Mô tả", true, DataSourceUpdateMode.Never);
-        //}
+        BindingSource genreList = new BindingSource();
+        TheLoaiDAO theLoaiDAO = new TheLoaiDAO();
+        public TheLoai()
+        {
+            InitializeComponent();
+           
+        }
+        void LoadTheLoai()
+        {
+            dgvTheLoai.DataSource = theLoaiDAO.GetTheLoai();
+       
+           
+        }
+        private void btnTheLoaiThem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnTheLoaiThemXem_Click(object sender, EventArgs e)
+        {
+            LoadTheLoai();
+           
+        }
     }
 }

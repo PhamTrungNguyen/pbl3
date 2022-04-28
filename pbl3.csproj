@@ -119,8 +119,9 @@
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\GenreDAO.cs" />
-    <Compile Include="DAO\MovieDAO.cs" />
+    <Compile Include="DAO\GiaiThich.cs" />
+    <Compile Include="DAO\TheLoaiDAO.cs" />
+    <Compile Include="DAO\PhimDAO.cs" />
     <Compile Include="Database.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +140,7 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\CBBTheLoai.cs" />
     <Compile Include="frmBang.cs">
       <SubType>Form</SubType>
     </Compile>

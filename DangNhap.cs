@@ -35,7 +35,7 @@ namespace pbl3
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
             btnLogin.Enabled = false;
-            if (txtUserName.Text == "" && txtPasswork.Text == "")
+            if (txtUserName.Text == "1" && txtPasswork.Text == "1")
             {
                 BangDieuKhien bangDieuKhien = new BangDieuKhien();
                 this.Hide();

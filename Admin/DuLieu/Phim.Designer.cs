@@ -35,7 +35,6 @@
             this.btnPhimThem = new System.Windows.Forms.Button();
             this.btnUpLoadPictureFilm = new System.Windows.Forms.Button();
             this.picFilm = new System.Windows.Forms.PictureBox();
-            this.clbMovieGenre = new System.Windows.Forms.CheckedListBox();
             this.dtpPhimNgayKT = new System.Windows.Forms.DateTimePicker();
             this.dtpPhimNgayKC = new System.Windows.Forms.DateTimePicker();
             this.txtPhimNamSX = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.lblMovieID = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvMovie = new System.Windows.Forms.DataGridView();
+            this.cboTheLoai = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFilm)).BeginInit();
             this.panel1.SuspendLayout();
@@ -65,13 +65,13 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.cboTheLoai);
             this.panel2.Controls.Add(this.btnPhimXem);
             this.panel2.Controls.Add(this.btnPhimXoa);
             this.panel2.Controls.Add(this.btnPhimSua);
             this.panel2.Controls.Add(this.btnPhimThem);
             this.panel2.Controls.Add(this.btnUpLoadPictureFilm);
             this.panel2.Controls.Add(this.picFilm);
-            this.panel2.Controls.Add(this.clbMovieGenre);
             this.panel2.Controls.Add(this.dtpPhimNgayKT);
             this.panel2.Controls.Add(this.dtpPhimNgayKC);
             this.panel2.Controls.Add(this.txtPhimNamSX);
@@ -159,17 +159,6 @@
             this.picFilm.TabIndex = 55;
             this.picFilm.TabStop = false;
             // 
-            // clbMovieGenre
-            // 
-            this.clbMovieGenre.CheckOnClick = true;
-            this.clbMovieGenre.FormattingEnabled = true;
-            this.clbMovieGenre.Location = new System.Drawing.Point(168, 116);
-            this.clbMovieGenre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.clbMovieGenre.MultiColumn = true;
-            this.clbMovieGenre.Name = "clbMovieGenre";
-            this.clbMovieGenre.Size = new System.Drawing.Size(347, 96);
-            this.clbMovieGenre.TabIndex = 54;
-            // 
             // dtpPhimNgayKT
             // 
             this.dtpPhimNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -178,7 +167,6 @@
             this.dtpPhimNgayKT.Name = "dtpPhimNgayKT";
             this.dtpPhimNgayKT.Size = new System.Drawing.Size(226, 26);
             this.dtpPhimNgayKT.TabIndex = 53;
-            this.dtpPhimNgayKT.ValueChanged += new System.EventHandler(this.txtPhimNgayKT_ValueChanged);
             // 
             // dtpPhimNgayKC
             // 
@@ -230,7 +218,6 @@
             this.lblMovieEndDate.Size = new System.Drawing.Size(111, 26);
             this.lblMovieEndDate.TabIndex = 44;
             this.lblMovieEndDate.Text = "Ngày KT:";
-            this.lblMovieEndDate.Click += new System.EventHandler(this.lblMovieEndDate_Click);
             // 
             // lblMovieStartDate
             // 
@@ -336,6 +323,7 @@
             this.txtPhimMa.Name = "txtPhimMa";
             this.txtPhimMa.Size = new System.Drawing.Size(164, 26);
             this.txtPhimMa.TabIndex = 45;
+            this.txtPhimMa.TextChanged += new System.EventHandler(this.txtPhimMa_TextChanged);
             // 
             // lblMovieID
             // 
@@ -366,8 +354,15 @@
             this.dgvMovie.RowTemplate.Height = 28;
             this.dgvMovie.Size = new System.Drawing.Size(1066, 382);
             this.dgvMovie.TabIndex = 0;
-            this.dgvMovie.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovie_CellContentClick);
             this.dgvMovie.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMovie_RowHeaderMouseClick);
+            // 
+            // cboTheLoai
+            // 
+            this.cboTheLoai.FormattingEnabled = true;
+            this.cboTheLoai.Location = new System.Drawing.Point(168, 120);
+            this.cboTheLoai.Name = "cboTheLoai";
+            this.cboTheLoai.Size = new System.Drawing.Size(164, 28);
+            this.cboTheLoai.TabIndex = 58;
             // 
             // Phim
             // 
@@ -391,7 +386,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnUpLoadPictureFilm;
         private System.Windows.Forms.PictureBox picFilm;
-        private System.Windows.Forms.CheckedListBox clbMovieGenre;
         private System.Windows.Forms.DateTimePicker dtpPhimNgayKT;
         private System.Windows.Forms.DateTimePicker dtpPhimNgayKC;
         private System.Windows.Forms.TextBox txtPhimNamSX;
@@ -417,5 +411,6 @@
         private System.Windows.Forms.Button btnPhimThem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvMovie;
+        private System.Windows.Forms.ComboBox cboTheLoai;
     }
 }

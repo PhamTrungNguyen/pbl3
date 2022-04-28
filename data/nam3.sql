@@ -1,10 +1,10 @@
-﻿CREATE DATABASE pbl3
+﻿CREATE DATABASE nam3
 GO
 
-USE pbl3
+USE nam3
 GO
 
------KhachHang--------
+-------------KhachHang-------------
 CREATE TABLE [dbo].[KhachHang] (
     [idKhachHang] NVARCHAR (50)  NOT NULL,
     [HoTenKH]     NVARCHAR (MAX) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[KhachHang] (
     CONSTRAINT [PK_KhachHang] PRIMARY KEY CLUSTERED ([idKhachHang] ASC)
 );
 GO
------NhanVien------
+-------------NhanVien-------------
 CREATE TABLE [dbo].[NhanVien] (
     [idNhanVien] NVARCHAR (50)  NOT NULL,
     [TenNV]      NVARCHAR (MAX) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE [dbo].[NhanVien] (
     CONSTRAINT [PK_NhanVien] PRIMARY KEY CLUSTERED ([idNhanVien] ASC)
 );
 GO
-----TaiKhoan----
+-------------TaiKhoan-------------
 CREATE TABLE [dbo].[TaiKhoan] (
     [UserName]   NVARCHAR (MAX) NULL,
     [Pass]       NVARCHAR (MAX) NULL,
@@ -36,7 +36,7 @@ CREATE TABLE [dbo].[TaiKhoan] (
 	FOREIGN KEY ([idNhanVien]) REFERENCES dbo.NhanVien([idNhanVien])
 );
 GO
----- TheLoai --------
+------------- TheLoai -------------
 CREATE TABLE [dbo].[TheLoai] (
     [IDTheLoai]  NVARCHAR (50)  NOT NULL,
     [TenTheLoai] NVARCHAR (MAX) NULL,
@@ -45,7 +45,7 @@ CREATE TABLE [dbo].[TheLoai] (
 );
 GO
 
----------- Phim --------------------
+------------- [Phim] --------------------
 CREATE TABLE [dbo].[Phim] (
     [IDPhim]        NVARCHAR (50) NOT NULL,
     [TenPhim]       NVARCHAR (50) NULL,
@@ -62,21 +62,15 @@ CREATE TABLE [dbo].[Phim] (
 
 
 GO
--------- PhanLoaiPhim --------
-CREATE TABLE [dbo].[PhanLoaiPhim] (
-    [IDPhanLoaiPhim] NVARCHAR (50)  NOT NULL,
-    [IDTheLoai]      NVARCHAR (50) NULL,
-    CONSTRAINT [PK_PhanLoaiPhim] PRIMARY KEY CLUSTERED ([IDPhanLoaiPhim] ASC),
-	FOREIGN KEY ([IDPhanLoaiPhim]) REFERENCES dbo.Phim([IDPhim]),
-	FOREIGN KEY (idTheLoai) REFERENCES dbo.TheLoai([IDTheLoai]),
-);
-GO
 
+------------- [LoaiManHinh] -----------------
 CREATE TABLE [dbo].[LoaiManHinh] (
     [IDLoaiManHinh] NVARCHAR (50)  NOT NULL,
     [TenManHinh]    NVARCHAR (MAX) NULL,
 	CONSTRAINT [PK_LoaiManHinh] PRIMARY KEY ([IDLoaiManHinh])
 );
+
+------------- [DinhDangPhim] -----------------
 CREATE TABLE [dbo].[DinhDangPhim] (
     [IDDinhDangPhim] NVARCHAR (50) NOT NULL,
     [IDPhim]         NVARCHAR (50) NOT NULL,
@@ -88,7 +82,7 @@ CREATE TABLE [dbo].[DinhDangPhim] (
 
 
 GO
-GO
+------------- [PhongChieu] -----------------
 CREATE TABLE [dbo].[PhongChieu] (
     [IDPhongChieu] NVARCHAR (50)  NOT NULL,
     [TenPhong]     NVARCHAR (MAX) NULL,
@@ -100,6 +94,8 @@ CREATE TABLE [dbo].[PhongChieu] (
 	CONSTRAINT [PK_PhongChieu] PRIMARY KEY ([IDPhongChieu]),
 	FOREIGN KEY ([IDManHinh]) REFERENCES dbo.LoaiManHinh([IDLoaiManHinh])
 );
+GO
+------------- [LichChieu] -----------------
 CREATE TABLE [dbo].[LichChieu] (
     [IDLichChieu]   NVARCHAR (50) NOT NULL,
     [ThoiGianChieu] DATETIME      NULL,
@@ -111,7 +107,7 @@ CREATE TABLE [dbo].[LichChieu] (
 	FOREIGN KEY ([IDPhong]) REFERENCES dbo.PhongChieu([IDPhongChieu]),
 	FOREIGN KEY ([IDDinhDang]) REFERENCES dbo.DinhDangPhim([IDDinhDangPhim]),
 );
---------- Ve -----------------
+------------- Ve -----------------
 CREATE TABLE [dbo].[Ve] (
     [IDVe]        NVARCHAR (50)  NOT NULL ,
     [LoaiVe]      NVARCHAR (MAX) NULL,
@@ -126,36 +122,29 @@ CREATE TABLE [dbo].[Ve] (
 );
 
 GO
---PHIM
+-----Stored Procedures
+-------------------- Phim ------------------
+-- Get Phim
 CREATE PROC USP_GetMovie
 AS
 BEGIN
-	SELECT IDPhim AS [Mã phim], TenPhim AS [Tên phim], ThoiLuong AS [Thời lượng], NgayKhoiChieu AS [Ngày khởi chiếu], NgayKetThuc AS [Ngày kết thúc], SanXuat AS [Sản xuất], DaoDien AS [Đạo diễn], NamSX AS [Năm SX]
+	SELECT IDPhim AS [Mã phim], TenPhim AS [Tên phim], ThoiLuong AS [Thời lượng], NgayKhoiChieu AS [Ngày khởi chiếu], NgayKetThuc AS [Ngày kết thúc], SanXuat AS [Sản xuất], DaoDien AS [Đạo diễn], NamSX AS [Năm SX] , IDTheLoai AS [TheLoai]
 	FROM dbo.Phim
 END
-GO
 
-alter PROC USP_GetListGenreByMovie
-@idPhim VARCHAR(50)
-AS
-BEGIN
-	SELECT TL.IDTheLoai, TenTheLoai, TL.MoTa
-	FROM dbo.PhanLoaiPhim PL, dbo.TheLoai TL
-	WHERE IDPhanLoaiPhim = @idPhim AND PL.idTheLoai = TL.IDTheLoai
-END
 GO
 
 -- thêm phim
-alter PROC USP_InsertMovie
-@idPhim nvarchar(50), @tenPhim nvarchar(50), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien nvarchar(50), @namSX INT
+create PROC USP_InsertMovie
+@idPhim nvarchar(50), @tenPhim nvarchar(50), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien nvarchar(50), @namSX INT , @idTheLoai nvarchar(50)
 AS
 BEGIN
-	INSERT dbo.Phim (IDPhim , TenPhim , ThoiLuong , NgayKhoiChieu , NgayKetThuc , SanXuat , DaoDien , NamSX )
-	VALUES (@idPhim , @tenPhim  , @thoiLuong , @ngayKhoiChieu , @ngayKetThuc , @sanXuat , @daoDien , @namSX)
+	INSERT dbo.Phim (IDPhim , TenPhim , ThoiLuong , NgayKhoiChieu , NgayKetThuc , SanXuat , DaoDien , NamSX , IDTheLoai)
+	VALUES (@idPhim , @tenPhim  , @thoiLuong , @ngayKhoiChieu , @ngayKetThuc , @sanXuat , @daoDien , @namSX , @idTheLoai)
 END
 GO
 
--- sữa phim CREATE PROC
+-- sữa phim 
 
 alter PROC USP_UpdateMovie
 @id NVARCHAR(50), @tenPhim NVARCHAR(50), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien NVARCHAR(50), @namSX INT 
@@ -165,32 +154,18 @@ BEGIN
 END
 GO
 
+-------------------- ADD------------------
+-- Add Thể Loại
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL01', N'Hành Động', NULL)
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL02', N'Hoạt Hình', NULL)
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL03', N'Hài', NULL)
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL04', N'Viễn Tưởng', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL05', N'Phiêu lưu', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL06', N'Gia đình', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL07', N'Tình Cảm', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL08', N'Tâm Lý', NULL)
 
-
-INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P01', N'Avengers: Cuộc Chiến Vô Cực',  150, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Anthony Russo,  Joe Russo', 2018)
-INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P02', N'Lật Mặt: 3 Chàng Khuyết',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Lý Hải', 2018)
-INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P03', N'100 Ngày Bên Em',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Vũ Ngọc Phượng', 2018)
-INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX]) VALUES (N'P04', N'Ngỗng Vịt Phiêu Lưu Ký', 91, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Christopher Jenkins', 2018)
+-- Add Phim
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] ,[IDTheLoai]) VALUES (N'P01', N'Avengers: Cuộc Chiến Vô Cực',  150, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Anthony Russo,  Joe Russo', 2018 , N'TL01')
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] , [IDTheLoai]) VALUES (N'P02', N'Lật Mặt: 3 Chàng Khuyết',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Lý Hải', 2018 , N'TL02')
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] , [IDTheLoai]) VALUES (N'P03', N'100 Ngày Bên Em',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Vũ Ngọc Phượng', 2018 , N'TL03')
+INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] , [IDTheLoai]) VALUES (N'P04', N'Ngỗng Vịt Phiêu Lưu Ký', 91, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Christopher Jenkins', 2018, N'TL04')
 
 
 
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P01', N'TL01')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P01', N'TL04')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P01', N'TL05')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P02', N'TL01')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P02', N'TL07')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P02', N'TL08')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P03', N'TL03')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P03', N'TL07')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P03', N'TL08')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P04', N'TL02')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P04', N'TL03')
-INSERT [dbo].[PhanLoaiPhim] ([IDPhanLoaiPhim], [idTheLoai]) VALUES (N'P04', N'TL05')

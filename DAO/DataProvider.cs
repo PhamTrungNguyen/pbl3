@@ -11,7 +11,7 @@ namespace pbl3.DAO
 {
     public class DataProvider
     {
-        private static string connectionSTR = @"Data Source=TRUNG-NGUYEN\SQLEXPRESS;Initial Catalog=demo;Integrated Security=True";//= "Data Source=THAITHANG-PC;Initial Catalog=QuanLyRapPhim;User ID=sa;pwd=thaithang1";
+        private static string connectionSTR = "";//= "Data Source=THAITHANG-PC;Initial Catalog=QuanLyRapPhim;User ID=sa;pwd=thaithang1";
         public  bool ConnectionSQL(string s)
         {
             bool result = false;

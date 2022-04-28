@@ -24,7 +24,7 @@ namespace pbl3
 
         private void btnPhim_Click(object sender, EventArgs e)
         {
-            this.Text = "Loại Màn Hình";
+            this.Text = "Phim";
             pbDuLieu.Controls.Clear();
             Phim phim = new Phim();
             phim.Dock = DockStyle.Fill;

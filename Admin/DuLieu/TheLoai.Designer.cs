@@ -73,6 +73,7 @@
             this.btnTheLoaiThemXem.TabIndex = 3;
             this.btnTheLoaiThemXem.Text = "Xem";
             this.btnTheLoaiThemXem.UseVisualStyleBackColor = true;
+            this.btnTheLoaiThemXem.Click += new System.EventHandler(this.btnTheLoaiThemXem_Click);
             // 
             // btnTheLoaiThemXoa
             // 
@@ -100,6 +101,7 @@
             this.btnTheLoaiThem.TabIndex = 6;
             this.btnTheLoaiThem.Text = "Thêm";
             this.btnTheLoaiThem.UseVisualStyleBackColor = true;
+            this.btnTheLoaiThem.Click += new System.EventHandler(this.btnTheLoaiThem_Click);
             // 
             // txtTheLoaiMoTa
             // 
