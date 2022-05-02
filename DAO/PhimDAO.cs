@@ -33,30 +33,6 @@ namespace pbl3.DAO
             int result = data.ExecuteNonQuery(query);
             return result > 0;
         }
-        public List<PhimDTO> GetAllPhim()
-        {
-            List<PhimDTO> list = new List<PhimDTO>();
-            string query = "select * from  Phim";
-            foreach (DataRow i in data.ExecuteQuery(query).Rows)
-            {
-                list.Add(GetPhimDataRow(i));
-            }
-            return list;
-        }
-        public PhimDTO GetPhimDataRow(DataRow i)
-        {
-            return new PhimDTO
-            {
-                idPhim = i["IDPhim"].ToString(),
-                tenPhim = i["TenPhim"].ToString(),
-                thoiLuong = Convert.ToInt32(i["ThoiLuong"].ToString()),
-                ngayKC = Convert.ToDateTime(i["NgayKhoiChieu"].ToString()),
-                ngayKT = Convert.ToDateTime(i["NgayKetThuc"].ToString()),
-                sanXuat =i["SanXuat"].ToString(),
-                namSanXuat = Convert.ToInt32(i["SanXuat"].ToString()),
-                daoDien =i["DaoDien"].ToString(),
-                idTheLoai = i["IDTheLoai"].ToString(),
-            };
-        }
+
     }
 }
