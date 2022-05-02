@@ -1,13 +1,13 @@
 ﻿namespace pbl3.Admin.DuLieu
 {
-    partial class Phim
+    partial class AddPhim
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,16 +20,14 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvMovie = new System.Windows.Forms.DataGridView();
             this.lblMovieID = new System.Windows.Forms.Label();
             this.txtPhimMa = new System.Windows.Forms.TextBox();
             this.lblMovieName = new System.Windows.Forms.Label();
@@ -49,44 +47,19 @@
             this.dtpPhimNgayKT = new System.Windows.Forms.DateTimePicker();
             this.picFilm = new System.Windows.Forms.PictureBox();
             this.btnUpLoadPictureFilm = new System.Windows.Forms.Button();
-            this.btnPhimThem = new System.Windows.Forms.Button();
-            this.btnPhimSua = new System.Windows.Forms.Button();
-            this.btnPhimXoa = new System.Windows.Forms.Button();
-            this.btnPhimXem = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.cboTheLoai = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFilm)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dgvMovie);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 260);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 382);
-            this.panel1.TabIndex = 2;
-            // 
-            // dgvMovie
-            // 
-            this.dgvMovie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMovie.Location = new System.Drawing.Point(0, 0);
-            this.dgvMovie.Name = "dgvMovie";
-            this.dgvMovie.RowHeadersWidth = 62;
-            this.dgvMovie.RowTemplate.Height = 28;
-            this.dgvMovie.Size = new System.Drawing.Size(1066, 382);
-            this.dgvMovie.TabIndex = 0;
-            this.dgvMovie.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMovie_RowHeaderMouseClick);
             // 
             // lblMovieID
             // 
             this.lblMovieID.AutoSize = true;
             this.lblMovieID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieID.Location = new System.Drawing.Point(17, 2);
+            this.lblMovieID.Location = new System.Drawing.Point(25, 17);
             this.lblMovieID.Name = "lblMovieID";
             this.lblMovieID.Size = new System.Drawing.Size(113, 26);
             this.lblMovieID.TabIndex = 43;
@@ -94,18 +67,17 @@
             // 
             // txtPhimMa
             // 
-            this.txtPhimMa.Location = new System.Drawing.Point(168, 0);
+            this.txtPhimMa.Location = new System.Drawing.Point(176, 15);
             this.txtPhimMa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimMa.Name = "txtPhimMa";
             this.txtPhimMa.Size = new System.Drawing.Size(164, 26);
             this.txtPhimMa.TabIndex = 45;
-            this.txtPhimMa.TextChanged += new System.EventHandler(this.txtPhimMa_TextChanged);
             // 
             // lblMovieName
             // 
             this.lblMovieName.AutoSize = true;
             this.lblMovieName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieName.Location = new System.Drawing.Point(15, 35);
+            this.lblMovieName.Location = new System.Drawing.Point(23, 50);
             this.lblMovieName.Name = "lblMovieName";
             this.lblMovieName.Size = new System.Drawing.Size(117, 26);
             this.lblMovieName.TabIndex = 36;
@@ -113,7 +85,7 @@
             // 
             // txtPhimTen
             // 
-            this.txtPhimTen.Location = new System.Drawing.Point(168, 42);
+            this.txtPhimTen.Location = new System.Drawing.Point(176, 57);
             this.txtPhimTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimTen.Name = "txtPhimTen";
             this.txtPhimTen.Size = new System.Drawing.Size(164, 26);
@@ -123,7 +95,7 @@
             // 
             this.lblMovieProductor.AutoSize = true;
             this.lblMovieProductor.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieProductor.Location = new System.Drawing.Point(539, -2);
+            this.lblMovieProductor.Location = new System.Drawing.Point(409, 20);
             this.lblMovieProductor.Name = "lblMovieProductor";
             this.lblMovieProductor.Size = new System.Drawing.Size(109, 26);
             this.lblMovieProductor.TabIndex = 38;
@@ -133,7 +105,7 @@
             // 
             this.lblMovieDirector.AutoSize = true;
             this.lblMovieDirector.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieDirector.Location = new System.Drawing.Point(539, 78);
+            this.lblMovieDirector.Location = new System.Drawing.Point(409, 100);
             this.lblMovieDirector.Name = "lblMovieDirector";
             this.lblMovieDirector.Size = new System.Drawing.Size(111, 26);
             this.lblMovieDirector.TabIndex = 39;
@@ -143,17 +115,18 @@
             // 
             this.lblMovieGenre.AutoSize = true;
             this.lblMovieGenre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieGenre.Location = new System.Drawing.Point(17, 77);
+            this.lblMovieGenre.Location = new System.Drawing.Point(25, 90);
             this.lblMovieGenre.Name = "lblMovieGenre";
             this.lblMovieGenre.Size = new System.Drawing.Size(103, 26);
             this.lblMovieGenre.TabIndex = 40;
             this.lblMovieGenre.Text = "Thể loại:";
+            this.lblMovieGenre.Click += new System.EventHandler(this.lblMovieGenre_Click);
             // 
             // lblMovieYear
             // 
             this.lblMovieYear.AutoSize = true;
             this.lblMovieYear.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieYear.Location = new System.Drawing.Point(539, 41);
+            this.lblMovieYear.Location = new System.Drawing.Point(409, 63);
             this.lblMovieYear.Name = "lblMovieYear";
             this.lblMovieYear.Size = new System.Drawing.Size(103, 26);
             this.lblMovieYear.TabIndex = 41;
@@ -163,7 +136,7 @@
             // 
             this.lblMovieLength.AutoSize = true;
             this.lblMovieLength.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieLength.Location = new System.Drawing.Point(15, 121);
+            this.lblMovieLength.Location = new System.Drawing.Point(23, 136);
             this.lblMovieLength.Name = "lblMovieLength";
             this.lblMovieLength.Size = new System.Drawing.Size(133, 26);
             this.lblMovieLength.TabIndex = 35;
@@ -173,7 +146,7 @@
             // 
             this.lblMovieStartDate.AutoSize = true;
             this.lblMovieStartDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieStartDate.Location = new System.Drawing.Point(539, 115);
+            this.lblMovieStartDate.Location = new System.Drawing.Point(409, 137);
             this.lblMovieStartDate.Name = "lblMovieStartDate";
             this.lblMovieStartDate.Size = new System.Drawing.Size(115, 26);
             this.lblMovieStartDate.TabIndex = 42;
@@ -183,7 +156,7 @@
             // 
             this.lblMovieEndDate.AutoSize = true;
             this.lblMovieEndDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovieEndDate.Location = new System.Drawing.Point(539, 158);
+            this.lblMovieEndDate.Location = new System.Drawing.Point(409, 180);
             this.lblMovieEndDate.Name = "lblMovieEndDate";
             this.lblMovieEndDate.Size = new System.Drawing.Size(111, 26);
             this.lblMovieEndDate.TabIndex = 44;
@@ -191,7 +164,7 @@
             // 
             // txtPhimThoiLuong
             // 
-            this.txtPhimThoiLuong.Location = new System.Drawing.Point(168, 123);
+            this.txtPhimThoiLuong.Location = new System.Drawing.Point(176, 138);
             this.txtPhimThoiLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimThoiLuong.Name = "txtPhimThoiLuong";
             this.txtPhimThoiLuong.Size = new System.Drawing.Size(164, 26);
@@ -199,7 +172,7 @@
             // 
             // txtPhimSanXuat
             // 
-            this.txtPhimSanXuat.Location = new System.Drawing.Point(692, 4);
+            this.txtPhimSanXuat.Location = new System.Drawing.Point(562, 26);
             this.txtPhimSanXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimSanXuat.Name = "txtPhimSanXuat";
             this.txtPhimSanXuat.Size = new System.Drawing.Size(188, 26);
@@ -207,7 +180,7 @@
             // 
             // txtPhimDaoDien
             // 
-            this.txtPhimDaoDien.Location = new System.Drawing.Point(692, 85);
+            this.txtPhimDaoDien.Location = new System.Drawing.Point(562, 107);
             this.txtPhimDaoDien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimDaoDien.Name = "txtPhimDaoDien";
             this.txtPhimDaoDien.Size = new System.Drawing.Size(188, 26);
@@ -215,7 +188,7 @@
             // 
             // txtPhimNamSX
             // 
-            this.txtPhimNamSX.Location = new System.Drawing.Point(692, 43);
+            this.txtPhimNamSX.Location = new System.Drawing.Point(562, 65);
             this.txtPhimNamSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimNamSX.Name = "txtPhimNamSX";
             this.txtPhimNamSX.Size = new System.Drawing.Size(188, 26);
@@ -224,7 +197,7 @@
             // dtpPhimNgayKC
             // 
             this.dtpPhimNgayKC.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPhimNgayKC.Location = new System.Drawing.Point(692, 115);
+            this.dtpPhimNgayKC.Location = new System.Drawing.Point(562, 137);
             this.dtpPhimNgayKC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpPhimNgayKC.Name = "dtpPhimNgayKC";
             this.dtpPhimNgayKC.Size = new System.Drawing.Size(226, 26);
@@ -233,7 +206,7 @@
             // dtpPhimNgayKT
             // 
             this.dtpPhimNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPhimNgayKT.Location = new System.Drawing.Point(692, 158);
+            this.dtpPhimNgayKT.Location = new System.Drawing.Point(562, 180);
             this.dtpPhimNgayKT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpPhimNgayKT.Name = "dtpPhimNgayKT";
             this.dtpPhimNgayKT.Size = new System.Drawing.Size(226, 26);
@@ -260,61 +233,40 @@
             this.btnUpLoadPictureFilm.Text = "Chọn hình ảnh";
             this.btnUpLoadPictureFilm.UseVisualStyleBackColor = true;
             // 
-            // btnPhimThem
+            // btnOk
             // 
-            this.btnPhimThem.Location = new System.Drawing.Point(23, 217);
-            this.btnPhimThem.Name = "btnPhimThem";
-            this.btnPhimThem.Size = new System.Drawing.Size(81, 36);
-            this.btnPhimThem.TabIndex = 57;
-            this.btnPhimThem.Text = "Thêm";
-            this.btnPhimThem.UseVisualStyleBackColor = true;
-            this.btnPhimThem.Click += new System.EventHandler(this.btnPhimThem_Click);
+            this.btnOk.Location = new System.Drawing.Point(193, 239);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(100, 55);
+            this.btnOk.TabIndex = 57;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // btnPhimSua
+            // btnThoat
             // 
-            this.btnPhimSua.Location = new System.Drawing.Point(110, 217);
-            this.btnPhimSua.Name = "btnPhimSua";
-            this.btnPhimSua.Size = new System.Drawing.Size(81, 36);
-            this.btnPhimSua.TabIndex = 57;
-            this.btnPhimSua.Text = "Sửa";
-            this.btnPhimSua.UseVisualStyleBackColor = true;
-            this.btnPhimSua.Click += new System.EventHandler(this.btnPhimSua_Click);
-            // 
-            // btnPhimXoa
-            // 
-            this.btnPhimXoa.Location = new System.Drawing.Point(197, 217);
-            this.btnPhimXoa.Name = "btnPhimXoa";
-            this.btnPhimXoa.Size = new System.Drawing.Size(81, 36);
-            this.btnPhimXoa.TabIndex = 57;
-            this.btnPhimXoa.Text = "Xóa";
-            this.btnPhimXoa.UseVisualStyleBackColor = true;
-            this.btnPhimXoa.Click += new System.EventHandler(this.btnPhimXoa_Click);
-            // 
-            // btnPhimXem
-            // 
-            this.btnPhimXem.Location = new System.Drawing.Point(284, 217);
-            this.btnPhimXem.Name = "btnPhimXem";
-            this.btnPhimXem.Size = new System.Drawing.Size(81, 36);
-            this.btnPhimXem.TabIndex = 57;
-            this.btnPhimXem.Text = "Xem";
-            this.btnPhimXem.UseVisualStyleBackColor = true;
-            this.btnPhimXem.Click += new System.EventHandler(this.btnPhimXem_Click);
+            this.btnThoat.Location = new System.Drawing.Point(502, 239);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(100, 55);
+            this.btnThoat.TabIndex = 57;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // cboTheLoai
             // 
             this.cboTheLoai.FormattingEnabled = true;
-            this.cboTheLoai.Location = new System.Drawing.Point(168, 79);
+            this.cboTheLoai.Location = new System.Drawing.Point(176, 92);
             this.cboTheLoai.Name = "cboTheLoai";
             this.cboTheLoai.Size = new System.Drawing.Size(164, 28);
             this.cboTheLoai.TabIndex = 58;
+            this.cboTheLoai.SelectedIndexChanged += new System.EventHandler(this.cboTheLoai_SelectedIndexChanged);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.cboTheLoai);
-            this.panel2.Controls.Add(this.btnPhimXem);
-            this.panel2.Controls.Add(this.btnPhimXoa);
-            this.panel2.Controls.Add(this.btnPhimSua);
-            this.panel2.Controls.Add(this.btnPhimThem);
+            this.panel2.Controls.Add(this.btnThoat);
+            this.panel2.Controls.Add(this.btnOk);
             this.panel2.Controls.Add(this.btnUpLoadPictureFilm);
             this.panel2.Controls.Add(this.picFilm);
             this.panel2.Controls.Add(this.dtpPhimNgayKT);
@@ -338,19 +290,17 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1066, 260);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(793, 336);
+            this.panel2.TabIndex = 2;
             // 
-            // Phim
+            // AddPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(793, 335);
             this.Controls.Add(this.panel2);
-            this.Name = "Phim";
-            this.Size = new System.Drawing.Size(1066, 642);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMovie)).EndInit();
+            this.Name = "AddPhim";
+            this.Text = "AddPhim";
             ((System.ComponentModel.ISupportInitialize)(this.picFilm)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -359,8 +309,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvMovie;
+
         private System.Windows.Forms.Label lblMovieID;
         private System.Windows.Forms.TextBox txtPhimMa;
         private System.Windows.Forms.Label lblMovieName;
@@ -380,10 +329,8 @@
         private System.Windows.Forms.DateTimePicker dtpPhimNgayKT;
         private System.Windows.Forms.PictureBox picFilm;
         private System.Windows.Forms.Button btnUpLoadPictureFilm;
-        private System.Windows.Forms.Button btnPhimThem;
-        private System.Windows.Forms.Button btnPhimSua;
-        private System.Windows.Forms.Button btnPhimXoa;
-        private System.Windows.Forms.Button btnPhimXem;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.ComboBox cboTheLoai;
         private System.Windows.Forms.Panel panel2;
     }

@@ -135,7 +135,7 @@ END
 GO
 
 -- thêm phim
-create PROC USP_InsertMovie
+alter PROC USP_InsertMovie
 @idPhim nvarchar(50), @tenPhim nvarchar(50), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien nvarchar(50), @namSX INT , @idTheLoai nvarchar(50)
 AS
 BEGIN
@@ -153,13 +153,32 @@ BEGIN
 	UPDATE dbo.Phim SET TenPhim = @tenPhim, ThoiLuong = @thoiLuong, NgayKhoiChieu = @ngayKhoiChieu, NgayKetThuc = @ngayKetThuc, SanXuat = @sanXuat, DaoDien = @daoDien, NamSX = @namSX WHERE IDPhim = @id
 END
 GO
+-------------------- TheLoai ------------------
+-- thêm the Loai
+create PROC USP_InsertTheLoai
+@idTheLoai nvarchar(50), @tenTheLoai nvarchar(50)
+AS
+BEGIN
+	INSERT dbo.TheLoai(IDTheLoai , TenTheLoai)
+	VALUES (@idTheLoai , @tenTheLoai  )
+END
+GO
+
+-- sữa the loai 
+alter PROC UpdateTheloai
+@idtheloai NVARCHAR(50), @tentheloai NVARCHAR(50) 
+AS
+BEGIN
+	UPDATE dbo.TheLoai SET TenTheLoai = @tentheloai  WHERE IDTheLoai = @idtheloai
+END
+GO
 
 -------------------- ADD------------------
 -- Add Thể Loại
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL01', N'Hành Động', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL02', N'Hoạt Hình', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL03', N'Hài', NULL)
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL04', N'Viễn Tưởng', NULL)
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL01', N'Hành Động')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL02', N'Hoạt Hình')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL03', N'Hài')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL04', N'Viễn Tưởng')
 
 -- Add Phim
 INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] ,[IDTheLoai]) VALUES (N'P01', N'Avengers: Cuộc Chiến Vô Cực',  150, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Anthony Russo,  Joe Russo', 2018 , N'TL01')

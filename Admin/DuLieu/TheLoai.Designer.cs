@@ -30,11 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTheLoaiThemXem = new System.Windows.Forms.Button();
-            this.btnTheLoaiThemXoa = new System.Windows.Forms.Button();
-            this.btnTheLoaiThemSua = new System.Windows.Forms.Button();
+            this.btnTheLoaiXoa = new System.Windows.Forms.Button();
+            this.btnTheLoaiSua = new System.Windows.Forms.Button();
             this.btnTheLoaiThem = new System.Windows.Forms.Button();
-            this.txtTheLoaiMoTa = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtTheLoaiTen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTheLoaiMa = new System.Windows.Forms.TextBox();
@@ -49,11 +47,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnTheLoaiThemXem);
-            this.panel1.Controls.Add(this.btnTheLoaiThemXoa);
-            this.panel1.Controls.Add(this.btnTheLoaiThemSua);
+            this.panel1.Controls.Add(this.btnTheLoaiXoa);
+            this.panel1.Controls.Add(this.btnTheLoaiSua);
             this.panel1.Controls.Add(this.btnTheLoaiThem);
-            this.panel1.Controls.Add(this.txtTheLoaiMoTa);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtTheLoaiTen);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtTheLoaiMa);
@@ -67,7 +63,7 @@
             // 
             // btnTheLoaiThemXem
             // 
-            this.btnTheLoaiThemXem.Location = new System.Drawing.Point(175, 438);
+            this.btnTheLoaiThemXem.Location = new System.Drawing.Point(166, 267);
             this.btnTheLoaiThemXem.Name = "btnTheLoaiThemXem";
             this.btnTheLoaiThemXem.Size = new System.Drawing.Size(109, 42);
             this.btnTheLoaiThemXem.TabIndex = 3;
@@ -75,51 +71,35 @@
             this.btnTheLoaiThemXem.UseVisualStyleBackColor = true;
             this.btnTheLoaiThemXem.Click += new System.EventHandler(this.btnTheLoaiThemXem_Click);
             // 
-            // btnTheLoaiThemXoa
+            // btnTheLoaiXoa
             // 
-            this.btnTheLoaiThemXoa.Location = new System.Drawing.Point(46, 438);
-            this.btnTheLoaiThemXoa.Name = "btnTheLoaiThemXoa";
-            this.btnTheLoaiThemXoa.Size = new System.Drawing.Size(109, 42);
-            this.btnTheLoaiThemXoa.TabIndex = 4;
-            this.btnTheLoaiThemXoa.Text = "Xóa";
-            this.btnTheLoaiThemXoa.UseVisualStyleBackColor = true;
+            this.btnTheLoaiXoa.Location = new System.Drawing.Point(37, 267);
+            this.btnTheLoaiXoa.Name = "btnTheLoaiXoa";
+            this.btnTheLoaiXoa.Size = new System.Drawing.Size(109, 42);
+            this.btnTheLoaiXoa.TabIndex = 4;
+            this.btnTheLoaiXoa.Text = "Xóa";
+            this.btnTheLoaiXoa.UseVisualStyleBackColor = true;
+            this.btnTheLoaiXoa.Click += new System.EventHandler(this.btnTheLoaiXoa_Click);
             // 
-            // btnTheLoaiThemSua
+            // btnTheLoaiSua
             // 
-            this.btnTheLoaiThemSua.Location = new System.Drawing.Point(175, 390);
-            this.btnTheLoaiThemSua.Name = "btnTheLoaiThemSua";
-            this.btnTheLoaiThemSua.Size = new System.Drawing.Size(109, 42);
-            this.btnTheLoaiThemSua.TabIndex = 5;
-            this.btnTheLoaiThemSua.Text = "Sửa";
-            this.btnTheLoaiThemSua.UseVisualStyleBackColor = true;
+            this.btnTheLoaiSua.Location = new System.Drawing.Point(166, 219);
+            this.btnTheLoaiSua.Name = "btnTheLoaiSua";
+            this.btnTheLoaiSua.Size = new System.Drawing.Size(109, 42);
+            this.btnTheLoaiSua.TabIndex = 5;
+            this.btnTheLoaiSua.Text = "Sửa";
+            this.btnTheLoaiSua.UseVisualStyleBackColor = true;
+            this.btnTheLoaiSua.Click += new System.EventHandler(this.btnTheLoaiSua_Click);
             // 
             // btnTheLoaiThem
             // 
-            this.btnTheLoaiThem.Location = new System.Drawing.Point(46, 390);
+            this.btnTheLoaiThem.Location = new System.Drawing.Point(37, 219);
             this.btnTheLoaiThem.Name = "btnTheLoaiThem";
             this.btnTheLoaiThem.Size = new System.Drawing.Size(109, 42);
             this.btnTheLoaiThem.TabIndex = 6;
             this.btnTheLoaiThem.Text = "Thêm";
             this.btnTheLoaiThem.UseVisualStyleBackColor = true;
             this.btnTheLoaiThem.Click += new System.EventHandler(this.btnTheLoaiThem_Click);
-            // 
-            // txtTheLoaiMoTa
-            // 
-            this.txtTheLoaiMoTa.Location = new System.Drawing.Point(27, 228);
-            this.txtTheLoaiMoTa.Multiline = true;
-            this.txtTheLoaiMoTa.Name = "txtTheLoaiMoTa";
-            this.txtTheLoaiMoTa.Size = new System.Drawing.Size(320, 145);
-            this.txtTheLoaiMoTa.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 200);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mô tả :";
             // 
             // txtTheLoaiTen
             // 
@@ -174,6 +154,7 @@
             this.dgvTheLoai.RowTemplate.Height = 28;
             this.dgvTheLoai.Size = new System.Drawing.Size(703, 661);
             this.dgvTheLoai.TabIndex = 0;
+            this.dgvTheLoai.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTheLoai_RowHeaderMouseClick);
             // 
             // TheLoai
             // 
@@ -194,8 +175,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtTheLoaiMoTa;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTheLoaiTen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTheLoaiMa;
@@ -203,8 +182,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvTheLoai;
         private System.Windows.Forms.Button btnTheLoaiThemXem;
-        private System.Windows.Forms.Button btnTheLoaiThemXoa;
-        private System.Windows.Forms.Button btnTheLoaiThemSua;
+        private System.Windows.Forms.Button btnTheLoaiXoa;
+        private System.Windows.Forms.Button btnTheLoaiSua;
         private System.Windows.Forms.Button btnTheLoaiThem;
     }
 }

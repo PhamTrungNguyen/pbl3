@@ -52,6 +52,18 @@
     <Compile Include="Admin1.Designer.cs">
       <DependentUpon>Admin1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DuLieu\AddPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DuLieu\AddPhim.Designer.cs">
+      <DependentUpon>AddPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DuLieu\AddTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DuLieu\AddTheLoai.Designer.cs">
+      <DependentUpon>AddTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DuLieu\DinhDang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,6 +153,7 @@
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\CBBTheLoai.cs" />
+    <Compile Include="DTO\PhimDTO.cs" />
     <Compile Include="frmBang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +176,12 @@
     </Compile>
     <EmbeddedResource Include="Admin1.resx">
       <DependentUpon>Admin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuLieu\AddPhim.resx">
+      <DependentUpon>AddPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuLieu\AddTheLoai.resx">
+      <DependentUpon>AddTheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\DuLieu\DinhDang.resx">
       <DependentUpon>DinhDang.cs</DependentUpon>

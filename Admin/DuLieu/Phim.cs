@@ -21,6 +21,10 @@ namespace pbl3.Admin.DuLieu
         public Phim()
         {
             InitializeComponent();
+            LoadTheLoai();
+        }
+        public void LoadTheLoai()
+        {
             string query = "select * from TheLoai"; // 
             foreach (DataRow i in data.ExecuteQuery(query).Rows)
             {
@@ -31,42 +35,22 @@ namespace pbl3.Admin.DuLieu
                 });
             }
         }
-
         void LoadMovie()
         {
-            dgvMovie.DataSource = phimDAO.GetMovie();
+            dgvMovie.DataSource = phimDAO.GetMovie() ;
         }
         private void btnPhimXem_Click(object sender, EventArgs e)
         {
             LoadMovie();
            
         }
-        void InsertMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year, string idTheLoai)
-        {
-            if (phimDAO.InsertMovie(id, name, length, startDate, endDate, productor, director, year, idTheLoai))
-            {
-                MessageBox.Show("Thêm phim thành công");
-            }
-            else
-            {
-                MessageBox.Show("Thêm phim thất bại");
-            }
-        }
-
         private void btnPhimThem_Click(object sender, EventArgs e)
         {   
-            string MaPhim = txtPhimMa.Text;
-            string TenPhim = txtPhimTen.Text;
-            float ThoiLuongPhim = float.Parse(txtPhimThoiLuong.Text);
-            DateTime NgayKCPhim = dtpPhimNgayKC.Value;
-            DateTime NgayKTPhim = dtpPhimNgayKT.Value;
-            string SanXuatPhim = txtPhimSanXuat.Text;
-            string DaoDienPhim = txtPhimDaoDien.Text;
-            int NamSXPhim = int.Parse(txtPhimNamSX.Text);
-            string IDPhim = cboTheLoai.SelectedItem.ToString(); 
-            InsertMovie(MaPhim, TenPhim, ThoiLuongPhim, NgayKCPhim, NgayKTPhim, SanXuatPhim, DaoDienPhim, NamSXPhim, IDPhim);
-            LoadMovie();
-
+           
+            AddPhim addPhim = new AddPhim();
+            addPhim.Show();
+            addPhim.d = new AddPhim.Mydel(LoadMovie);
+          
         }
 
         void UpdateMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year)
@@ -82,6 +66,7 @@ namespace pbl3.Admin.DuLieu
         }
         private void btnPhimSua_Click(object sender, EventArgs e)
         {
+            
             string MaPhim = txtPhimMa.Text;
             string TenPhim = txtPhimTen.Text;
             float ThoiLuongPhim = float.Parse(txtPhimThoiLuong.Text);
@@ -93,23 +78,20 @@ namespace pbl3.Admin.DuLieu
             UpdateMovie(MaPhim, TenPhim, ThoiLuongPhim, NgayKCPhim, NgayKTPhim, SanXuatPhim, DaoDienPhim, NamSXPhim);
             LoadMovie();
         }
-
-
-
         private void dgvMovie_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (dgvMovie.SelectedRows.Count == 1)
             {
-
-                txtPhimMa.Text = dgvMovie.SelectedRows[0].Cells["Mã phim"].Value.ToString();
-                txtPhimTen.Text = dgvMovie.SelectedRows[0].Cells["Tên phim"].Value.ToString();
-                txtPhimThoiLuong.Text = dgvMovie.SelectedRows[0].Cells["Thời lượng"].Value.ToString();
-                txtPhimNamSX.Text = dgvMovie.SelectedRows[0].Cells["Năm SX"].Value.ToString();
-                dtpPhimNgayKC.Value = Convert.ToDateTime(dgvMovie.SelectedRows[0].Cells["Ngày khởi chiếu"].Value.ToString());
-                dtpPhimNgayKT.Value = Convert.ToDateTime(dgvMovie.SelectedRows[0].Cells["Ngày kết thúc"].Value.ToString());
-                txtPhimSanXuat.Text = dgvMovie.SelectedRows[0].Cells["Sản xuất"].Value.ToString();
-                txtPhimDaoDien.Text = dgvMovie.SelectedRows[0].Cells["Đạo diễn"].Value.ToString();
-                string id = dgvMovie.SelectedRows[0].Cells["TheLoai"].Value.ToString();
+                txtPhimMa.Enabled = false;
+                txtPhimMa.Text = dgvMovie.SelectedRows[0].Cells["IDPhim"].Value.ToString();
+                txtPhimTen.Text = dgvMovie.SelectedRows[0].Cells["TenPhim"].Value.ToString();
+                txtPhimThoiLuong.Text = dgvMovie.SelectedRows[0].Cells["ThoiLuong"].Value.ToString();
+                txtPhimNamSX.Text = dgvMovie.SelectedRows[0].Cells["NamSX"].Value.ToString();
+                dtpPhimNgayKC.Value = Convert.ToDateTime(dgvMovie.SelectedRows[0].Cells["NgayKhoiChieu"].Value.ToString());
+                dtpPhimNgayKT.Value = Convert.ToDateTime(dgvMovie.SelectedRows[0].Cells["NgayKetThuc"].Value.ToString());
+                txtPhimSanXuat.Text = dgvMovie.SelectedRows[0].Cells["SanXuat"].Value.ToString();
+                txtPhimDaoDien.Text = dgvMovie.SelectedRows[0].Cells["DaoDien"].Value.ToString();
+                string id = dgvMovie.SelectedRows[0].Cells["IDTheLoai"].Value.ToString();
                 foreach (CBBTheLoai r in cboTheLoai.Items)
                 {
                     if (r.value == id)
@@ -120,6 +102,17 @@ namespace pbl3.Admin.DuLieu
             }
 
         }
+        void XoaPhim(string id)
+        {
+            if(phimDAO.DelPhim(id))
+            {
+                MessageBox.Show("Xóa phim thành công");
+            }
+            else
+            {
+                MessageBox.Show("Xóa phim thất bại");
+            }    
+        }
         private void btnPhimXoa_Click(object sender, EventArgs e)
         {
             try
@@ -129,9 +122,8 @@ namespace pbl3.Admin.DuLieu
                     DialogResult ret = MessageBox.Show("Bạn có muốn xóa sản phẩm này?", "Hỏi xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (ret == DialogResult.Yes)
                     {
-                        string maPhim = dgvMovie.SelectedRows[0].Cells["Mã phim"].Value.ToString();
-                        string queryDel = "delete from Phim where IDPhim = '" + maPhim + "'";
-                        data.ExecuteNonQuery(queryDel, null);
+                        string maPhim = dgvMovie.SelectedRows[0].Cells["IDPhim"].Value.ToString();
+                        XoaPhim(maPhim);
                         LoadMovie();
                     }
                 }
@@ -152,5 +144,7 @@ namespace pbl3.Admin.DuLieu
 
 
         }
+
+      
     }
 }
