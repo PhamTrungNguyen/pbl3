@@ -15,7 +15,7 @@ namespace pbl3.Admin.DuLieu
     {
         public delegate void Mydel();
         public Mydel d;
-        TheLoaiDAO theLoaiDao = new TheLoaiDAO();
+        TheLoaiDAL theLoaiDao = new TheLoaiDAL();
         public AddTheLoai()
         {
             InitializeComponent();

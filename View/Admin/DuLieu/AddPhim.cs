@@ -17,7 +17,7 @@ namespace pbl3.Admin.DuLieu
         public delegate void Mydel();
         public Mydel d { get; set; }
         DataProvider data = new DataProvider();
-        PhimDAO phimDAO = new PhimDAO();
+        PhimDAL phimDAO = new PhimDAL();
         Phim Phim = new Phim();
         public AddPhim()
         {

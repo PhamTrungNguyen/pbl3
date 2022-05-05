@@ -50,7 +50,7 @@
             this.picFilm = new System.Windows.Forms.PictureBox();
             this.btnUpLoadPictureFilm = new System.Windows.Forms.Button();
             this.btnPhimThem = new System.Windows.Forms.Button();
-            this.btnPhimSua = new System.Windows.Forms.Button();
+            this.btnPhimUpdate = new System.Windows.Forms.Button();
             this.btnPhimXoa = new System.Windows.Forms.Button();
             this.btnPhimXem = new System.Windows.Forms.Button();
             this.cboTheLoai = new System.Windows.Forms.ComboBox();
@@ -98,9 +98,7 @@
             this.txtPhimMa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhimMa.Name = "txtPhimMa";
             this.txtPhimMa.Size = new System.Drawing.Size(164, 26);
-            this.txtPhimMa.TabIndex = 45;
-            this.txtPhimMa.TextChanged += new System.EventHandler(this.txtPhimMa_TextChanged);
-            // 
+            this.txtPhimMa.TabIndex = 45;            // 
             // lblMovieName
             // 
             this.lblMovieName.AutoSize = true;
@@ -270,15 +268,15 @@
             this.btnPhimThem.UseVisualStyleBackColor = true;
             this.btnPhimThem.Click += new System.EventHandler(this.btnPhimThem_Click);
             // 
-            // btnPhimSua
+            // btnPhimUpdate
             // 
-            this.btnPhimSua.Location = new System.Drawing.Point(110, 217);
-            this.btnPhimSua.Name = "btnPhimSua";
-            this.btnPhimSua.Size = new System.Drawing.Size(81, 36);
-            this.btnPhimSua.TabIndex = 57;
-            this.btnPhimSua.Text = "Sửa";
-            this.btnPhimSua.UseVisualStyleBackColor = true;
-            this.btnPhimSua.Click += new System.EventHandler(this.btnPhimSua_Click);
+            this.btnPhimUpdate.Location = new System.Drawing.Point(110, 217);
+            this.btnPhimUpdate.Name = "btnPhimUpdate";
+            this.btnPhimUpdate.Size = new System.Drawing.Size(81, 36);
+            this.btnPhimUpdate.TabIndex = 57;
+            this.btnPhimUpdate.Text = "Sửa";
+            this.btnPhimUpdate.UseVisualStyleBackColor = true;
+            this.btnPhimUpdate.Click += new System.EventHandler(this.btnPhimUpdate_Click);
             // 
             // btnPhimXoa
             // 
@@ -313,7 +311,7 @@
             this.panel2.Controls.Add(this.cboTheLoai);
             this.panel2.Controls.Add(this.btnPhimXem);
             this.panel2.Controls.Add(this.btnPhimXoa);
-            this.panel2.Controls.Add(this.btnPhimSua);
+            this.panel2.Controls.Add(this.btnPhimUpdate);
             this.panel2.Controls.Add(this.btnPhimThem);
             this.panel2.Controls.Add(this.btnUpLoadPictureFilm);
             this.panel2.Controls.Add(this.picFilm);
@@ -381,7 +379,7 @@
         private System.Windows.Forms.PictureBox picFilm;
         private System.Windows.Forms.Button btnUpLoadPictureFilm;
         private System.Windows.Forms.Button btnPhimThem;
-        private System.Windows.Forms.Button btnPhimSua;
+        private System.Windows.Forms.Button btnPhimUpdate;
         private System.Windows.Forms.Button btnPhimXoa;
         private System.Windows.Forms.Button btnPhimXem;
         private System.Windows.Forms.ComboBox cboTheLoai;

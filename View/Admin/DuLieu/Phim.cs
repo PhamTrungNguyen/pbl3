@@ -10,14 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using pbl3.DTO;
+using pbl3.BLL;
 
 namespace pbl3.Admin.DuLieu
 {
     public partial class Phim : UserControl
     {
         DataProvider data = new DataProvider();
-        PhimDAO phimDAO = new PhimDAO();
-        TheLoaiDAO theLoaiDAO = new TheLoaiDAO();
+        PhimBLL phimBLL = new PhimBLL();
         public Phim()
         {
             InitializeComponent();
@@ -35,38 +35,24 @@ namespace pbl3.Admin.DuLieu
                 });
             }
         }
-        void LoadMovie()
+        public void Reload()
         {
-            dgvMovie.DataSource = phimDAO.GetMovie() ;
+            dgvMovie.DataSource = phimBLL.LoadMovie();
         }
         private void btnPhimXem_Click(object sender, EventArgs e)
         {
-            LoadMovie();
-           
+            Reload();
         }
         private void btnPhimThem_Click(object sender, EventArgs e)
         {   
            
             AddPhim addPhim = new AddPhim();
             addPhim.Show();
-            addPhim.d = new AddPhim.Mydel(LoadMovie);
+            addPhim.d = new AddPhim.Mydel(Reload);
           
         }
-
-        void UpdateMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year)
+        private void btnPhimUpdate_Click(object sender, EventArgs e)
         {
-            if (phimDAO.UpdateMovie(id, name, length, startDate, endDate, productor, director, year))
-            {
-                MessageBox.Show("Sửa phim thành công");
-            }
-            else
-            {
-                MessageBox.Show("Sửa phim thất bại");
-            }
-        }
-        private void btnPhimSua_Click(object sender, EventArgs e)
-        {
-            
             string MaPhim = txtPhimMa.Text;
             string TenPhim = txtPhimTen.Text;
             float ThoiLuongPhim = float.Parse(txtPhimThoiLuong.Text);
@@ -75,9 +61,27 @@ namespace pbl3.Admin.DuLieu
             string SanXuatPhim = txtPhimSanXuat.Text;
             string DaoDienPhim = txtPhimDaoDien.Text;
             int NamSXPhim = Int32.Parse(txtPhimNamSX.Text);
-            UpdateMovie(MaPhim, TenPhim, ThoiLuongPhim, NgayKCPhim, NgayKTPhim, SanXuatPhim, DaoDienPhim, NamSXPhim);
-            LoadMovie();
+            phimBLL.UpdateMovie(MaPhim, TenPhim, ThoiLuongPhim, NgayKCPhim, NgayKTPhim, SanXuatPhim, DaoDienPhim, NamSXPhim);
+            Reload();
         }
+        private void btnPhimXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvMovie.SelectedRows.Count == 1)
+            {
+                DialogResult ret = MessageBox.Show("Bạn có muốn xóa sản phẩm này?", "Hỏi xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (ret == DialogResult.Yes)
+                {
+                     string maPhim = dgvMovie.SelectedRows[0].Cells["IDPhim"].Value.ToString();
+                     phimBLL.XoaPhim(maPhim);
+                     Reload();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa chọn để xóa");
+            }
+        }
+
         private void dgvMovie_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (dgvMovie.SelectedRows.Count == 1)
@@ -102,49 +106,6 @@ namespace pbl3.Admin.DuLieu
             }
 
         }
-        void XoaPhim(string id)
-        {
-            if(phimDAO.DelPhim(id))
-            {
-                MessageBox.Show("Xóa phim thành công");
-            }
-            else
-            {
-                MessageBox.Show("Xóa phim thất bại");
-            }    
-        }
-        private void btnPhimXoa_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (dgvMovie.SelectedRows.Count == 1)
-                {
-                    DialogResult ret = MessageBox.Show("Bạn có muốn xóa sản phẩm này?", "Hỏi xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (ret == DialogResult.Yes)
-                    {
-                        string maPhim = dgvMovie.SelectedRows[0].Cells["IDPhim"].Value.ToString();
-                        XoaPhim(maPhim);
-                        LoadMovie();
-                    }
-                }
-                else
-                {
-                        MessageBox.Show("Bạn chưa chọn để xóa");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
 
-        }
-
-        private void txtPhimMa_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-      
     }
 }

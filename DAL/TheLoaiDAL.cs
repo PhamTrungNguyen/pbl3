@@ -10,9 +10,9 @@ using pbl3.DAO;
 using pbl3.DTO;
 namespace pbl3.DAO
 {
-    public class TheLoaiDAO
+    public class TheLoaiDAL
     {
-        PhimDAO phimDAO= new PhimDAO();
+        PhimDAL phimdal= new PhimDAL();
         DataProvider data = new DataProvider();
         public  DataTable GetTheLoai()
         {
@@ -21,7 +21,7 @@ namespace pbl3.DAO
         public string getIDPhim(string id)
         {
             string phimID = "";
-            foreach (DataRow i in phimDAO.GetMovie().Rows)
+            foreach (DataRow i in phimdal.GetMovie().Rows)
             {
 
                 if (i["IDTheLoai"].ToString() == id)

@@ -175,10 +175,10 @@ GO
 
 -------------------- ADD------------------
 -- Add Thể Loại
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL01', N'Hành Động')
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL02', N'Hoạt Hình')
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL03', N'Hài')
-INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai], [MoTa]) VALUES (N'TL04', N'Viễn Tưởng')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL01', N'Hành Động')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL02', N'Hoạt Hình')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL03', N'Hài')
+INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL04', N'Viễn Tưởng')
 
 -- Add Phim
 INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] ,[IDTheLoai]) VALUES (N'P01', N'Avengers: Cuộc Chiến Vô Cực',  150, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Anthony Russo,  Joe Russo', 2018 , N'TL01')

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using pbl3.DTO;
 namespace pbl3.DAO
 {
-    public class PhimDAO
+    public class PhimDAL
     {
         DataProvider data = new DataProvider();
         public  DataTable GetMovie()

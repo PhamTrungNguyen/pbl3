@@ -46,189 +46,191 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin1.cs">
+    <Compile Include="BLL\PhimBLL.cs" />
+    <Compile Include="BLL\TheLoaiBLL.cs" />
+    <Compile Include="View\MainView\Admin1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin1.Designer.cs">
+    <Compile Include="View\MainView\Admin1.Designer.cs">
       <DependentUpon>Admin1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\AddPhim.cs">
+    <Compile Include="View\Admin\DuLieu\AddPhim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\AddPhim.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\AddPhim.Designer.cs">
       <DependentUpon>AddPhim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\AddTheLoai.cs">
+    <Compile Include="View\Admin\DuLieu\AddTheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\AddTheLoai.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\AddTheLoai.Designer.cs">
       <DependentUpon>AddTheLoai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\DinhDang.cs">
+    <Compile Include="View\Admin\DuLieu\DinhDang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\DinhDang.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\DinhDang.Designer.cs">
       <DependentUpon>DinhDang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\LichChieu.cs">
+    <Compile Include="View\Admin\DuLieu\LichChieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\LichChieu.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\LichChieu.Designer.cs">
       <DependentUpon>LichChieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\LoaiManHinh.cs">
+    <Compile Include="View\Admin\DuLieu\LoaiManHinh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\LoaiManHinh.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\LoaiManHinh.Designer.cs">
       <DependentUpon>LoaiManHinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\Phim.cs">
+    <Compile Include="View\Admin\DuLieu\Phim.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\Phim.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\Phim.Designer.cs">
       <DependentUpon>Phim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\PhongChieu.cs">
+    <Compile Include="View\Admin\DuLieu\PhongChieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\PhongChieu.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\PhongChieu.Designer.cs">
       <DependentUpon>PhongChieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuLieu\TheLoai.cs">
+    <Compile Include="View\Admin\DuLieu\TheLoai.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu\TheLoai.Designer.cs">
+    <Compile Include="View\Admin\DuLieu\TheLoai.Designer.cs">
       <DependentUpon>TheLoai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\KhachHang\KhachHang.cs">
+    <Compile Include="View\Admin\KhachHang\KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\KhachHang\KhachHang.designer.cs">
+    <Compile Include="View\Admin\KhachHang\KhachHang.designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien\NhanVien.cs">
+    <Compile Include="View\Admin\NhanVien\NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien\NhanVien.designer.cs">
+    <Compile Include="View\Admin\NhanVien\NhanVien.designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.cs">
+    <Compile Include="View\Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.designer.cs">
+    <Compile Include="View\Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="BangDieuKhien.cs">
+    <Compile Include="View\MainView\BangDieuKhien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BangDieuKhien.Designer.cs">
+    <Compile Include="View\MainView\BangDieuKhien.Designer.cs">
       <DependentUpon>BangDieuKhien.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangNhap.cs">
+    <Compile Include="View\MainView\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangNhap.Designer.cs">
+    <Compile Include="View\MainView\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\GiaiThich.cs" />
-    <Compile Include="DAO\TheLoaiDAO.cs" />
-    <Compile Include="DAO\PhimDAO.cs" />
-    <Compile Include="Database.cs">
+    <Compile Include="DAL\DataProvider.cs" />
+    <Compile Include="DAL\GiaiThich.cs" />
+    <Compile Include="DAL\TheLoaiDAL.cs" />
+    <Compile Include="DAL\PhimDAL.cs" />
+    <Compile Include="View\MainView\Database.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Database.Designer.cs">
+    <Compile Include="View\MainView\Database.Designer.cs">
       <DependentUpon>Database.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DoanhThuu\DoanhThu.cs">
+    <Compile Include="View\Admin\DoanhThuu\DoanhThu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DoanhThuu\DoanhThu.designer.cs">
+    <Compile Include="View\Admin\DoanhThuu\DoanhThu.designer.cs">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoiMatKhau.cs">
+    <Compile Include="View\MainView\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoiMatKhau.Designer.cs">
+    <Compile Include="View\MainView\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\CBBTheLoai.cs" />
     <Compile Include="DTO\PhimDTO.cs" />
-    <Compile Include="frmBang.cs">
+    <Compile Include="View\MainView\frmBang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBang.designer.cs">
+    <Compile Include="View\MainView\frmBang.designer.cs">
       <DependentUpon>frmBang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPhongChieu.cs">
+    <Compile Include="View\MainView\frmPhongChieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPhongChieu.designer.cs">
+    <Compile Include="View\MainView\frmPhongChieu.designer.cs">
       <DependentUpon>frmPhongChieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Admin\DuLieu.cs">
+    <Compile Include="View\Admin\DuLieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\DuLieu.Designer.cs">
+    <Compile Include="View\Admin\DuLieu.Designer.cs">
       <DependentUpon>DuLieu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin1.resx">
+    <EmbeddedResource Include="View\MainView\Admin1.resx">
       <DependentUpon>Admin1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\AddPhim.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\AddPhim.resx">
       <DependentUpon>AddPhim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\AddTheLoai.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\AddTheLoai.resx">
       <DependentUpon>AddTheLoai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\DinhDang.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\DinhDang.resx">
       <DependentUpon>DinhDang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\LichChieu.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\LichChieu.resx">
       <DependentUpon>LichChieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\LoaiManHinh.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\LoaiManHinh.resx">
       <DependentUpon>LoaiManHinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\Phim.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\Phim.resx">
       <DependentUpon>Phim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\PhongChieu.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\PhongChieu.resx">
       <DependentUpon>PhongChieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuLieu\TheLoai.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu\TheLoai.resx">
       <DependentUpon>TheLoai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\KhachHang\KhachHang.resx">
+    <EmbeddedResource Include="View\Admin\KhachHang\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien\NhanVien.resx">
+    <EmbeddedResource Include="View\Admin\NhanVien\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.resx">
+    <EmbeddedResource Include="View\Admin\ThongTinTaiKhoan\ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BangDieuKhien.resx">
+    <EmbeddedResource Include="View\MainView\BangDieuKhien.resx">
       <DependentUpon>BangDieuKhien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DangNhap.resx">
+    <EmbeddedResource Include="View\MainView\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Database.resx">
+    <EmbeddedResource Include="View\MainView\Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DoanhThuu\DoanhThu.resx">
+    <EmbeddedResource Include="View\Admin\DoanhThuu\DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoiMatKhau.resx">
+    <EmbeddedResource Include="View\MainView\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBang.resx">
+    <EmbeddedResource Include="View\MainView\frmBang.resx">
       <DependentUpon>frmBang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPhongChieu.resx">
+    <EmbeddedResource Include="View\MainView\frmPhongChieu.resx">
       <DependentUpon>frmPhongChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -241,7 +243,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Admin\DuLieu.resx">
+    <EmbeddedResource Include="View\Admin\DuLieu.resx">
       <DependentUpon>DuLieu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -260,5 +262,6 @@
   <ItemGroup>
     <None Include="user.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
