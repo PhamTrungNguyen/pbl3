@@ -22,9 +22,9 @@ namespace pbl3.DAO
             return result > 0;
         }
 
-        public  bool UpdateMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year)
+        public  bool UpdateMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year, string idTheLoai)
         {
-            int result = data.ExecuteNonQuery("EXEC USP_UpdateMovie @id , @tenPhim   , @thoiLuong , @ngayKhoiChieu , @ngayKetThuc , @sanXuat , @daoDien , @namSX  ", new object[] { id, name, length, startDate, endDate, productor, director, year });
+            int result = data.ExecuteNonQuery("EXEC USP_UpdateMovie @id , @tenPhim   , @thoiLuong , @ngayKhoiChieu , @ngayKetThuc , @sanXuat , @daoDien , @namSX , @idTheLoai ", new object[] { id, name, length, startDate, endDate, productor, director, year, idTheLoai });
             return result > 0;
         }
         public bool DelPhim(string id)

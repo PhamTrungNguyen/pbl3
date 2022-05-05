@@ -18,6 +18,7 @@ namespace pbl3.Admin.DuLieu
     {
         DataProvider data = new DataProvider();
         PhimBLL phimBLL = new PhimBLL();
+        CBBTheLoai cbbTheLoai = new CBBTheLoai();
         public Phim()
         {
             InitializeComponent();
@@ -61,7 +62,8 @@ namespace pbl3.Admin.DuLieu
             string SanXuatPhim = txtPhimSanXuat.Text;
             string DaoDienPhim = txtPhimDaoDien.Text;
             int NamSXPhim = Int32.Parse(txtPhimNamSX.Text);
-            phimBLL.UpdateMovie(MaPhim, TenPhim, ThoiLuongPhim, NgayKCPhim, NgayKTPhim, SanXuatPhim, DaoDienPhim, NamSXPhim);
+            string IDTheLoai = ((CBBTheLoai)cboTheLoai.SelectedItem).value;
+            phimBLL.UpdateMovie(MaPhim, TenPhim, ThoiLuongPhim, NgayKCPhim, NgayKTPhim, SanXuatPhim, DaoDienPhim, NamSXPhim,IDTheLoai);
             Reload();
         }
         private void btnPhimXoa_Click(object sender, EventArgs e)

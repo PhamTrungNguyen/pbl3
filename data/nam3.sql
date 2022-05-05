@@ -145,12 +145,11 @@ END
 GO
 
 -- sữa phim 
-
 alter PROC USP_UpdateMovie
-@id NVARCHAR(50), @tenPhim NVARCHAR(50), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daoDien NVARCHAR(50), @namSX INT 
+@id NVARCHAR(50), @tenPhim NVARCHAR(50), @thoiLuong FLOAT, @ngayKhoiChieu DATE, @ngayKetThuc DATE, @sanXuat NVARCHAR(50), @daodien NVARCHAR(50), @namSX INT , @idTheloai  NVARCHAR(50)
 AS
 BEGIN
-	UPDATE dbo.Phim SET TenPhim = @tenPhim, ThoiLuong = @thoiLuong, NgayKhoiChieu = @ngayKhoiChieu, NgayKetThuc = @ngayKetThuc, SanXuat = @sanXuat, DaoDien = @daoDien, NamSX = @namSX WHERE IDPhim = @id
+	UPDATE dbo.Phim SET TenPhim = @tenPhim, ThoiLuong = @thoiLuong, NgayKhoiChieu = @ngayKhoiChieu, NgayKetThuc = @ngayKetThuc, SanXuat = @sanXuat,DaoDien=@daodien , NamSX = @namSX, IDTheLoai=@idTheloai WHERE IDPhim = @id
 END
 GO
 -------------------- TheLoai ------------------

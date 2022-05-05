@@ -19,9 +19,9 @@ namespace pbl3.BLL
         {
             return phimDAL.GetMovie();
         }
-        public void UpdateMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year)
+        public void UpdateMovie(string id, string name, float length, DateTime startDate, DateTime endDate, string productor, string director, int year, string idTheloai)
         {
-            if (phimDAL.UpdateMovie(id, name, length, startDate, endDate, productor, director, year))
+            if (phimDAL.UpdateMovie(id, name, length, startDate, endDate, productor, director, year, idTheloai))
             {
                 MessageBox.Show("Sửa phim thành công");
             }
