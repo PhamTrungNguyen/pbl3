@@ -171,7 +171,14 @@ BEGIN
 	UPDATE dbo.TheLoai SET TenTheLoai = @tentheloai  WHERE IDTheLoai = @idtheloai
 END
 GO
-
+-------------------- DinhDangPhim ------------------
+alter proc UpdateDinhDangPhim
+@idLoaiManHinh nvarchar(50) , @idPhim nvarchar(50), @idDinhDang nvarchar(50)
+as
+begin 
+	update dbo.DinhDangPhim set IDLoaiManHinh = @idLoaiManHinh , IDPhim=@idPhim where IDDinhDangPhim = @idDinhDang
+end
+go
 -------------------- ADD------------------
 -- Add Thể Loại
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL01', N'Hành Động')
@@ -184,6 +191,13 @@ INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKet
 INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] , [IDTheLoai]) VALUES (N'P02', N'Lật Mặt: 3 Chàng Khuyết',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Lý Hải', 2018 , N'TL02')
 INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] , [IDTheLoai]) VALUES (N'P03', N'100 Ngày Bên Em',  100, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Việt Nam', N'Vũ Ngọc Phượng', 2018 , N'TL03')
 INSERT into [Phim] ([IDPhim], [TenPhim],  [ThoiLuong], [NgayKhoiChieu], [NgayKetThuc], [SanXuat], [DaoDien], [NamSX] , [IDTheLoai]) VALUES (N'P04', N'Ngỗng Vịt Phiêu Lưu Ký', 91, CAST(N'2018-05-01' AS Date), CAST(N'2018-06-01' AS Date), N'Mỹ', N'Christopher Jenkins', 2018, N'TL04')
-
-
-
+-- Add Loại màn hình
+INSERT [dbo].[LoaiManHinh] ([IDLoaiManHinh], [TenManHinh]) VALUES (N'MH01', N'2D')
+INSERT [dbo].[LoaiManHinh] ([IDLoaiManHinh], [TenManHinh]) VALUES (N'MH02', N'3D')
+INSERT [dbo].[LoaiManHinh] ([IDLoaiManHinh], [TenManHinh]) VALUES (N'MH03', N'IMAX')
+INSERT [dbo].[LoaiManHinh] ([IDLoaiManHinh], [TenManHinh]) VALUES (N'MH04', N'4D')
+-- Add Định dạng phim
+INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD01', N'P01', N'MH01')
+INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD02', N'P01', N'MH03')
+INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD03', N'P02', N'MH01')
+INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD04', N'P03', N'MH02')

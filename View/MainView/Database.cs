@@ -36,9 +36,12 @@ namespace pbl3
             }
             else
             {
-                connectionSTR = "Data Source=" + txtserverName.Text
-                    + ";Initial Catalog=" + txtdataName.Text
-                    + ";Integrated Security=True";
+                //connectionSTR = "Data Source= " + txtserverName.Text
+                //    + ";Initial Catalog=" + txtdataName.Text
+                //    + ";Integrated Security=True";
+                connectionSTR = @"Data Source= TRUNG-NGUYEN\SQLEXPRESS"
+                   + ";Initial Catalog= nam3" 
+                   + ";Integrated Security=True";
             }
             bool result = data.ConnectionSQL(connectionSTR);
             if (result)

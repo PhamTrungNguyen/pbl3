@@ -29,9 +29,13 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.cboDinhDangMaMH = new System.Windows.Forms.ComboBox();
+            this.btnDinhDangXem = new System.Windows.Forms.Button();
+            this.btnDinhDangXoa = new System.Windows.Forms.Button();
+            this.btnDinhDangSua = new System.Windows.Forms.Button();
+            this.btnDinhDangThem = new System.Windows.Forms.Button();
+            this.cbbDinhDangMaMH = new System.Windows.Forms.ComboBox();
             this.lblFormat_ScreenName = new System.Windows.Forms.Label();
-            this.cboDinhDangMaPhim = new System.Windows.Forms.ComboBox();
+            this.cbbDinhDangMaPhim = new System.Windows.Forms.ComboBox();
             this.lblFormat_ScreenID = new System.Windows.Forms.Label();
             this.lblFormat_MovieName = new System.Windows.Forms.Label();
             this.lblFormat_MovieID = new System.Windows.Forms.Label();
@@ -39,15 +43,11 @@
             this.lblFormatID = new System.Windows.Forms.Label();
             this.txtDinhDangTenPhim = new System.Windows.Forms.TextBox();
             this.txtDinhDangMaDinhDang = new System.Windows.Forms.TextBox();
-            this.btnDinhDangXem = new System.Windows.Forms.Button();
-            this.btnDinhDangXoa = new System.Windows.Forms.Button();
-            this.btnDinhDangSua = new System.Windows.Forms.Button();
-            this.btnDinhDangThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDinhDangPhim = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDinhDangPhim)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -56,9 +56,9 @@
             this.panel3.Controls.Add(this.btnDinhDangXoa);
             this.panel3.Controls.Add(this.btnDinhDangSua);
             this.panel3.Controls.Add(this.btnDinhDangThem);
-            this.panel3.Controls.Add(this.cboDinhDangMaMH);
+            this.panel3.Controls.Add(this.cbbDinhDangMaMH);
             this.panel3.Controls.Add(this.lblFormat_ScreenName);
-            this.panel3.Controls.Add(this.cboDinhDangMaPhim);
+            this.panel3.Controls.Add(this.cbbDinhDangMaPhim);
             this.panel3.Controls.Add(this.lblFormat_ScreenID);
             this.panel3.Controls.Add(this.lblFormat_MovieName);
             this.panel3.Controls.Add(this.lblFormat_MovieID);
@@ -73,15 +73,54 @@
             this.panel3.Size = new System.Drawing.Size(1043, 191);
             this.panel3.TabIndex = 1;
             // 
-            // cboDinhDangMaMH
+            // btnDinhDangXem
             // 
-            this.cboDinhDangMaMH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDinhDangMaMH.FormattingEnabled = true;
-            this.cboDinhDangMaMH.Location = new System.Drawing.Point(202, 16);
-            this.cboDinhDangMaMH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboDinhDangMaMH.Name = "cboDinhDangMaMH";
-            this.cboDinhDangMaMH.Size = new System.Drawing.Size(259, 28);
-            this.cboDinhDangMaMH.TabIndex = 20;
+            this.btnDinhDangXem.Location = new System.Drawing.Point(297, 134);
+            this.btnDinhDangXem.Name = "btnDinhDangXem";
+            this.btnDinhDangXem.Size = new System.Drawing.Size(81, 36);
+            this.btnDinhDangXem.TabIndex = 58;
+            this.btnDinhDangXem.Text = "Xem";
+            this.btnDinhDangXem.UseVisualStyleBackColor = true;
+            this.btnDinhDangXem.Click += new System.EventHandler(this.btnDinhDangXem_Click);
+            // 
+            // btnDinhDangXoa
+            // 
+            this.btnDinhDangXoa.Location = new System.Drawing.Point(210, 134);
+            this.btnDinhDangXoa.Name = "btnDinhDangXoa";
+            this.btnDinhDangXoa.Size = new System.Drawing.Size(81, 36);
+            this.btnDinhDangXoa.TabIndex = 59;
+            this.btnDinhDangXoa.Text = "Xóa";
+            this.btnDinhDangXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnDinhDangSua
+            // 
+            this.btnDinhDangSua.Location = new System.Drawing.Point(123, 134);
+            this.btnDinhDangSua.Name = "btnDinhDangSua";
+            this.btnDinhDangSua.Size = new System.Drawing.Size(81, 36);
+            this.btnDinhDangSua.TabIndex = 60;
+            this.btnDinhDangSua.Text = "Sửa";
+            this.btnDinhDangSua.UseVisualStyleBackColor = true;
+            this.btnDinhDangSua.Click += new System.EventHandler(this.btnDinhDangSua_Click);
+            // 
+            // btnDinhDangThem
+            // 
+            this.btnDinhDangThem.Location = new System.Drawing.Point(36, 134);
+            this.btnDinhDangThem.Name = "btnDinhDangThem";
+            this.btnDinhDangThem.Size = new System.Drawing.Size(81, 36);
+            this.btnDinhDangThem.TabIndex = 61;
+            this.btnDinhDangThem.Text = "Thêm";
+            this.btnDinhDangThem.UseVisualStyleBackColor = true;
+            // 
+            // cbbDinhDangMaMH
+            // 
+            this.cbbDinhDangMaMH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbDinhDangMaMH.FormattingEnabled = true;
+            this.cbbDinhDangMaMH.Location = new System.Drawing.Point(202, 16);
+            this.cbbDinhDangMaMH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbDinhDangMaMH.Name = "cbbDinhDangMaMH";
+            this.cbbDinhDangMaMH.Size = new System.Drawing.Size(259, 28);
+            this.cbbDinhDangMaMH.TabIndex = 20;
+            this.cbbDinhDangMaMH.SelectedIndexChanged += new System.EventHandler(this.cbbDinhDangMaMH_SelectedIndexChanged);
             // 
             // lblFormat_ScreenName
             // 
@@ -93,15 +132,16 @@
             this.lblFormat_ScreenName.TabIndex = 15;
             this.lblFormat_ScreenName.Text = "Tên màn hình:";
             // 
-            // cboDinhDangMaPhim
+            // cbbDinhDangMaPhim
             // 
-            this.cboDinhDangMaPhim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDinhDangMaPhim.FormattingEnabled = true;
-            this.cboDinhDangMaPhim.Location = new System.Drawing.Point(709, 13);
-            this.cboDinhDangMaPhim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboDinhDangMaPhim.Name = "cboDinhDangMaPhim";
-            this.cboDinhDangMaPhim.Size = new System.Drawing.Size(259, 28);
-            this.cboDinhDangMaPhim.TabIndex = 21;
+            this.cbbDinhDangMaPhim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbDinhDangMaPhim.FormattingEnabled = true;
+            this.cbbDinhDangMaPhim.Location = new System.Drawing.Point(709, 13);
+            this.cbbDinhDangMaPhim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbDinhDangMaPhim.Name = "cbbDinhDangMaPhim";
+            this.cbbDinhDangMaPhim.Size = new System.Drawing.Size(259, 28);
+            this.cbbDinhDangMaPhim.TabIndex = 21;
+            this.cbbDinhDangMaPhim.SelectedIndexChanged += new System.EventHandler(this.cbbDinhDangMaPhim_SelectedIndexChanged);
             // 
             // lblFormat_ScreenID
             // 
@@ -169,61 +209,26 @@
             this.txtDinhDangMaDinhDang.Size = new System.Drawing.Size(259, 26);
             this.txtDinhDangMaDinhDang.TabIndex = 14;
             // 
-            // btnDinhDangXem
-            // 
-            this.btnDinhDangXem.Location = new System.Drawing.Point(297, 134);
-            this.btnDinhDangXem.Name = "btnDinhDangXem";
-            this.btnDinhDangXem.Size = new System.Drawing.Size(81, 36);
-            this.btnDinhDangXem.TabIndex = 58;
-            this.btnDinhDangXem.Text = "Xem";
-            this.btnDinhDangXem.UseVisualStyleBackColor = true;
-            // 
-            // btnDinhDangXoa
-            // 
-            this.btnDinhDangXoa.Location = new System.Drawing.Point(210, 134);
-            this.btnDinhDangXoa.Name = "btnDinhDangXoa";
-            this.btnDinhDangXoa.Size = new System.Drawing.Size(81, 36);
-            this.btnDinhDangXoa.TabIndex = 59;
-            this.btnDinhDangXoa.Text = "Xóa";
-            this.btnDinhDangXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnDinhDangSua
-            // 
-            this.btnDinhDangSua.Location = new System.Drawing.Point(123, 134);
-            this.btnDinhDangSua.Name = "btnDinhDangSua";
-            this.btnDinhDangSua.Size = new System.Drawing.Size(81, 36);
-            this.btnDinhDangSua.TabIndex = 60;
-            this.btnDinhDangSua.Text = "Sửa";
-            this.btnDinhDangSua.UseVisualStyleBackColor = true;
-            // 
-            // btnDinhDangThem
-            // 
-            this.btnDinhDangThem.Location = new System.Drawing.Point(36, 134);
-            this.btnDinhDangThem.Name = "btnDinhDangThem";
-            this.btnDinhDangThem.Size = new System.Drawing.Size(81, 36);
-            this.btnDinhDangThem.TabIndex = 61;
-            this.btnDinhDangThem.Text = "Thêm";
-            this.btnDinhDangThem.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgvDinhDangPhim);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 191);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 448);
             this.panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvDinhDangPhim
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1043, 448);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvDinhDangPhim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDinhDangPhim.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDinhDangPhim.Location = new System.Drawing.Point(0, 0);
+            this.dgvDinhDangPhim.Name = "dgvDinhDangPhim";
+            this.dgvDinhDangPhim.RowHeadersWidth = 80;
+            this.dgvDinhDangPhim.RowTemplate.Height = 28;
+            this.dgvDinhDangPhim.Size = new System.Drawing.Size(1043, 448);
+            this.dgvDinhDangPhim.TabIndex = 0;
+            this.dgvDinhDangPhim.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDinhDangPhim_RowHeaderMouseClick);
             // 
             // DinhDang
             // 
@@ -236,7 +241,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDinhDangPhim)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,9 +249,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox cboDinhDangMaMH;
+        private System.Windows.Forms.ComboBox cbbDinhDangMaMH;
         private System.Windows.Forms.Label lblFormat_ScreenName;
-        private System.Windows.Forms.ComboBox cboDinhDangMaPhim;
+        private System.Windows.Forms.ComboBox cbbDinhDangMaPhim;
         private System.Windows.Forms.Label lblFormat_ScreenID;
         private System.Windows.Forms.Label lblFormat_MovieName;
         private System.Windows.Forms.Label lblFormat_MovieID;
@@ -259,6 +264,6 @@
         private System.Windows.Forms.Button btnDinhDangSua;
         private System.Windows.Forms.Button btnDinhDangThem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDinhDangPhim;
     }
 }
