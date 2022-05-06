@@ -18,7 +18,6 @@ namespace pbl3.Admin.DuLieu
         public Mydel d { get; set; }
         DataProvider data = new DataProvider();
         PhimDAL phimDAO = new PhimDAL();
-        Phim Phim = new Phim();
         public AddPhim()
         {
             InitializeComponent();

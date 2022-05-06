@@ -115,3 +115,4 @@ C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\bin\Debug\pbl3.exe
 C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\bin\Debug\pbl3.pdb
 C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\obj\Debug\pbl3.Admin.DuLieu.AddPhim.resources
 C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\obj\Debug\pbl3.Admin.DuLieu.AddTheLoai.resources
+C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\obj\Debug\pbl3.View.Admin.DuLieu.AddDinhDang.resources

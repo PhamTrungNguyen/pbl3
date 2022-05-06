@@ -172,13 +172,23 @@ BEGIN
 END
 GO
 -------------------- DinhDangPhim ------------------
+-- sửa Định dạng
 alter proc UpdateDinhDangPhim
 @idLoaiManHinh nvarchar(50) , @idPhim nvarchar(50), @idDinhDang nvarchar(50)
 as
 begin 
-	update dbo.DinhDangPhim set IDLoaiManHinh = @idLoaiManHinh , IDPhim=@idPhim where IDDinhDangPhim = @idDinhDang
+	update dbo.DinhDangPhim set IDLoaiManHinh = @idLoaiManHinh , IDPhim = @idPhim where IDDinhDangPhim = @idDinhDang
 end
 go
+--Thêm định đạng
+CREATE PROC USP_InsertFormatMovie
+@idDinhDang VARCHAR(50), @idPhim VARCHAR(50), @idLoaiManHinh VARCHAR(50)
+AS
+BEGIN
+	INSERT dbo.DinhDangPhim ( IDDinhDangPhim, IDPhim, IDLoaiManHinh )
+	VALUES  ( @idDinhDang, @idPhim, @idLoaiManHinh )
+END
+GO
 -------------------- ADD------------------
 -- Add Thể Loại
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL01', N'Hành Động')
@@ -201,3 +211,13 @@ INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES
 INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD02', N'P01', N'MH03')
 INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD03', N'P02', N'MH01')
 INSERT [dbo].[DinhDangPhim] ([IDDinhDangPhim], [IDPhim], [IDLoaiManHinh]) VALUES (N'DD04', N'P03', N'MH02')
+-- Add Phòng chiếu
+INSERT [dbo].[PhongChieu] ([IDPhongChieu], [TenPhong], [IDManHinh], [SoChoNgoi], [TinhTrang], [SoHangGhe], [SoGheMotHang]) VALUES (N'PC01', N'CINEMA 01', N'MH01', 140, 1, 10, 14)
+INSERT [dbo].[PhongChieu] ([IDPhongChieu], [TenPhong], [IDManHinh], [SoChoNgoi], [TinhTrang], [SoHangGhe], [SoGheMotHang]) VALUES (N'PC02', N'CINEMA 02', N'MH01', 140, 1, 10, 14)
+INSERT [dbo].[PhongChieu] ([IDPhongChieu], [TenPhong], [IDManHinh], [SoChoNgoi], [TinhTrang], [SoHangGhe], [SoGheMotHang]) VALUES (N'PC03', N'CINEMA 03', N'MH03', 140, 1, 10, 14)
+INSERT [dbo].[PhongChieu] ([IDPhongChieu], [TenPhong], [IDManHinh], [SoChoNgoi], [TinhTrang], [SoHangGhe], [SoGheMotHang]) VALUES (N'PC04', N'CINEMA 04', N'MH01', 140, 1, 10, 14)
+--Add Lịch chiếu
+INSERT [dbo].[LichChieu] ([IDLichChieu], [ThoiGianChieu], [IDPhong], [IDDinhDang], [GiaVe], [TrangThai]) VALUES (N'LC01', CAST(N'2022-05-02T08:50:00.000' AS DateTime), N'PC01', N'DD01', 85000.0000, 1)
+INSERT [dbo].[LichChieu] ([IDLichChieu], [ThoiGianChieu], [IDPhong], [IDDinhDang], [GiaVe], [TrangThai]) VALUES (N'LC02', CAST(N'2022-05-02T08:05:00.000' AS DateTime), N'PC02', N'DD01', 85000.0000, 0)
+INSERT [dbo].[LichChieu] ([IDLichChieu], [ThoiGianChieu], [IDPhong], [IDDinhDang], [GiaVe], [TrangThai]) VALUES (N'LC03', CAST(N'2022-05-02T08:10:00.000' AS DateTime), N'PC03', N'DD02', 85000.0000, 0)
+INSERT [dbo].[LichChieu] ([IDLichChieu], [ThoiGianChieu], [IDPhong], [IDDinhDang], [GiaVe], [TrangThai]) VALUES (N'LC04', CAST(N'2022-05-02T09:20:00.000' AS DateTime), N'PC04', N'DD03', 85000.0000, 0)

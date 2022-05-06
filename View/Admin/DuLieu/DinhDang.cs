@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using pbl3.DAL;
 using pbl3.DAO;
 using pbl3.DTO;
+using pbl3.View.Admin.DuLieu;
 
 namespace pbl3.Admin.DuLieu
 {
@@ -56,7 +57,20 @@ namespace pbl3.Admin.DuLieu
         {
             Reload();
         }
-
+        private void btnDinhDangSua_Click(object sender, EventArgs e)
+        {
+            string idManHinh = cbbDinhDangMaMH.SelectedItem.ToString();
+            string idPhim = cbbDinhDangMaPhim.SelectedItem.ToString();
+            string idDinhDang = txtDinhDangMaDinhDang.Text;
+            dinhDangPhimBLL.UpdateDinhDangPhim(idManHinh, idPhim, idDinhDang);
+            Reload();
+        }
+        private void btnDinhDangThem_Click(object sender, EventArgs e)
+        {
+            AddDinhDang addDinhDang = new AddDinhDang();
+            addDinhDang.d = new AddDinhDang.Mydel(Reload);
+            addDinhDang.Show();
+        }
         private void dgvDinhDangPhim_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if(dgvDinhDangPhim.SelectedRows.Count ==1)
@@ -106,13 +120,6 @@ namespace pbl3.Admin.DuLieu
             }
         }
 
-        private void btnDinhDangSua_Click(object sender, EventArgs e)
-        {
-            string idManHinh = cbbDinhDangMaMH.SelectedItem.ToString();
-            string idPhim = cbbDinhDangMaPhim.SelectedItem.ToString();
-            string idDinhDang = txtDinhDangMaDinhDang.Text;
-            dinhDangPhimBLL.UpdateDinhDangPhim(idManHinh, idPhim, idDinhDang);
-            Reload();
-        }
+    
     }
 }

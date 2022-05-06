@@ -19,5 +19,11 @@ namespace pbl3.DAL
             int result = data.ExecuteNonQuery("EXEC UpdateDinhDangPhim @idLoaiManHinh , @idPhim , @idDinhDang   ", new object[] { idManHinh, idPhim , idDinhDang });
             return result > 0;
         }
+        public bool ThemDinhDang(string idDinhDang, string idPhim, string idLoaiManHinh)
+        {
+            int result = data.ExecuteNonQuery("EXEC USP_InsertFormatMovie @idDinhDang , @idPhim , @idLoaiManHinh", new object[] { idDinhDang, idPhim, idLoaiManHinh });
+            return result > 0;
+        }
+
     }
 }

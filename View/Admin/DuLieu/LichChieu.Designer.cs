@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLichChieuXem = new System.Windows.Forms.Button();
+            this.btnLichChieuXoa = new System.Windows.Forms.Button();
+            this.btnLichChieuSua = new System.Windows.Forms.Button();
+            this.btnLichChieuThem = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtmShowtimeTime = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,10 +50,6 @@
             this.txtLichChieuPhim = new System.Windows.Forms.TextBox();
             this.txtTicketPrice_Showtime = new System.Windows.Forms.TextBox();
             this.txtLichChieuMALC = new System.Windows.Forms.TextBox();
-            this.btnLichChieuXem = new System.Windows.Forms.Button();
-            this.btnLichChieuXoa = new System.Windows.Forms.Button();
-            this.btnLichChieuSua = new System.Windows.Forms.Button();
-            this.btnLichChieuThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
@@ -82,6 +82,43 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1062, 237);
             this.panel2.TabIndex = 1;
+            // 
+            // btnLichChieuXem
+            // 
+            this.btnLichChieuXem.Location = new System.Drawing.Point(735, 182);
+            this.btnLichChieuXem.Name = "btnLichChieuXem";
+            this.btnLichChieuXem.Size = new System.Drawing.Size(81, 36);
+            this.btnLichChieuXem.TabIndex = 62;
+            this.btnLichChieuXem.Text = "Xem";
+            this.btnLichChieuXem.UseVisualStyleBackColor = true;
+            this.btnLichChieuXem.Click += new System.EventHandler(this.btnLichChieuXem_Click_1);
+            // 
+            // btnLichChieuXoa
+            // 
+            this.btnLichChieuXoa.Location = new System.Drawing.Point(648, 182);
+            this.btnLichChieuXoa.Name = "btnLichChieuXoa";
+            this.btnLichChieuXoa.Size = new System.Drawing.Size(81, 36);
+            this.btnLichChieuXoa.TabIndex = 63;
+            this.btnLichChieuXoa.Text = "Xóa";
+            this.btnLichChieuXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnLichChieuSua
+            // 
+            this.btnLichChieuSua.Location = new System.Drawing.Point(561, 182);
+            this.btnLichChieuSua.Name = "btnLichChieuSua";
+            this.btnLichChieuSua.Size = new System.Drawing.Size(81, 36);
+            this.btnLichChieuSua.TabIndex = 64;
+            this.btnLichChieuSua.Text = "Sửa";
+            this.btnLichChieuSua.UseVisualStyleBackColor = true;
+            // 
+            // btnLichChieuThem
+            // 
+            this.btnLichChieuThem.Location = new System.Drawing.Point(474, 182);
+            this.btnLichChieuThem.Name = "btnLichChieuThem";
+            this.btnLichChieuThem.Size = new System.Drawing.Size(81, 36);
+            this.btnLichChieuThem.TabIndex = 65;
+            this.btnLichChieuThem.Text = "Thêm";
+            this.btnLichChieuThem.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -146,6 +183,7 @@
             this.cboLichChieuMa.Name = "cboLichChieuMa";
             this.cboLichChieuMa.Size = new System.Drawing.Size(242, 28);
             this.cboLichChieuMa.TabIndex = 26;
+            this.cboLichChieuMa.SelectedIndexChanged += new System.EventHandler(this.cboLichChieuMa_SelectedIndexChanged_1);
             // 
             // label3
             // 
@@ -246,42 +284,6 @@
             this.txtLichChieuMALC.Size = new System.Drawing.Size(242, 26);
             this.txtLichChieuMALC.TabIndex = 19;
             // 
-            // btnLichChieuXem
-            // 
-            this.btnLichChieuXem.Location = new System.Drawing.Point(735, 182);
-            this.btnLichChieuXem.Name = "btnLichChieuXem";
-            this.btnLichChieuXem.Size = new System.Drawing.Size(81, 36);
-            this.btnLichChieuXem.TabIndex = 62;
-            this.btnLichChieuXem.Text = "Xem";
-            this.btnLichChieuXem.UseVisualStyleBackColor = true;
-            // 
-            // btnLichChieuXoa
-            // 
-            this.btnLichChieuXoa.Location = new System.Drawing.Point(648, 182);
-            this.btnLichChieuXoa.Name = "btnLichChieuXoa";
-            this.btnLichChieuXoa.Size = new System.Drawing.Size(81, 36);
-            this.btnLichChieuXoa.TabIndex = 63;
-            this.btnLichChieuXoa.Text = "Xóa";
-            this.btnLichChieuXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnLichChieuSua
-            // 
-            this.btnLichChieuSua.Location = new System.Drawing.Point(561, 182);
-            this.btnLichChieuSua.Name = "btnLichChieuSua";
-            this.btnLichChieuSua.Size = new System.Drawing.Size(81, 36);
-            this.btnLichChieuSua.TabIndex = 64;
-            this.btnLichChieuSua.Text = "Sửa";
-            this.btnLichChieuSua.UseVisualStyleBackColor = true;
-            // 
-            // btnLichChieuThem
-            // 
-            this.btnLichChieuThem.Location = new System.Drawing.Point(474, 182);
-            this.btnLichChieuThem.Name = "btnLichChieuThem";
-            this.btnLichChieuThem.Size = new System.Drawing.Size(81, 36);
-            this.btnLichChieuThem.TabIndex = 65;
-            this.btnLichChieuThem.Text = "Thêm";
-            this.btnLichChieuThem.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridView1);
@@ -301,6 +303,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1062, 413);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick_1);
             // 
             // LichChieu
             // 

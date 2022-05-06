@@ -110,6 +110,7 @@
             this.btnDinhDangThem.TabIndex = 61;
             this.btnDinhDangThem.Text = "Thêm";
             this.btnDinhDangThem.UseVisualStyleBackColor = true;
+            this.btnDinhDangThem.Click += new System.EventHandler(this.btnDinhDangThem_Click);
             // 
             // cbbDinhDangMaMH
             // 
