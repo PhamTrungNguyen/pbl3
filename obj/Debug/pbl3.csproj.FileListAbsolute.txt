@@ -116,3 +116,102 @@ C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\bin\Debug\pbl3.pdb
 C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\obj\Debug\pbl3.Admin.DuLieu.AddPhim.resources
 C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\obj\Debug\pbl3.Admin.DuLieu.AddTheLoai.resources
 C:\Users\Win 10 Pro\Desktop\BT.NET\pbl3\obj\Debug\pbl3.View.Admin.DuLieu.AddDinhDang.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.exe.config
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.exe
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.pdb
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.AssemblyReference.cache
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddDinhDang.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddLoaiMH.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddPhongChieu.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin1.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.AddPhim.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.AddTheLoai.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.DinhDang.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LichChieu.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LoaiManHinh.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.Phim.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.PhongChieu.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.TheLoai.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.KhachHang.KhachHang.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.NhanVien.NhanVien.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.ThongTinTaiKhoan.ThongTinTaiKhoan.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.BangDieuKhien.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DangNhap.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Database.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DoanhThu.DoanhThu.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DoiMatKhau.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.frmBang.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.frmPhongChieu.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Properties.Resources.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DuLieu.resources
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.GenerateResource.cache
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.CoreCompileInputs.cache
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.exe
+C:\Users\ASUS-PRO\Downloads\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.pdb
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.exe.config
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.exe
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.pdb
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.AssemblyReference.cache
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddDinhDang.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddLoaiMH.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddPhongChieu.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin1.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.AddPhim.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.AddTheLoai.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.DinhDang.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LichChieu.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LoaiManHinh.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.Phim.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.PhongChieu.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.TheLoai.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.KhachHang.KhachHang.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.NhanVien.NhanVien.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.ThongTinTaiKhoan.ThongTinTaiKhoan.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.BangDieuKhien.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DangNhap.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Database.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DoanhThu.DoanhThu.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DoiMatKhau.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.frmBang.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.frmPhongChieu.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Properties.Resources.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DuLieu.resources
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.GenerateResource.cache
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.CoreCompileInputs.cache
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.exe
+C:\Users\ASUS-PRO\Desktop\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.exe.config
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.exe
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\bin\Debug\pbl3.pdb
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.AssemblyReference.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddDinhDang.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddLoaiMH.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.View.Admin.DuLieu.AddPhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin1.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.AddPhim.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.AddTheLoai.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.DinhDang.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LichChieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.LoaiManHinh.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.Phim.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.PhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DuLieu.TheLoai.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.KhachHang.KhachHang.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.NhanVien.NhanVien.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.ThongTinTaiKhoan.ThongTinTaiKhoan.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.BangDieuKhien.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DangNhap.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Database.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Admin.DoanhThu.DoanhThu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DoiMatKhau.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.frmBang.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.frmPhongChieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.Properties.Resources.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.DuLieu.resources
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.GenerateResource.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.csproj.CoreCompileInputs.cache
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.exe
+C:\Users\Win 10 Pro\Desktop\pbl3-main (3)\pbl3-main (3)\pbl3-main\obj\Debug\pbl3.pdb

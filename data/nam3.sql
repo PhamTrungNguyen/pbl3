@@ -189,6 +189,43 @@ BEGIN
 	VALUES  ( @idDinhDang, @idPhim, @idLoaiManHinh )
 END
 GO
+
+-------------------- LoaiManHinh ------------------
+CREATE PROC USP_InsertLoaiManHinh
+@IDLoaiMH VARCHAR(50), @TenLoaiMH NVARCHAR(100)
+AS
+BEGIN
+	INSERT dbo.LoaiManHinh ( IDLoaiManHinh, TenManHinh )
+	VALUES  (@IDLoaiMH, @TenLoaiMH)
+END
+GO
+
+create PROC USP_UpdateLoaiManHinh
+@id NVARCHAR(50), @tenLoaiMH NVARCHAR(50)
+AS
+BEGIN
+	UPDATE dbo.LoaiManHinh SET TenManHinh = @tenLoaiMH WHERE IDLoaiManHinh = @id
+END
+GO
+-------------------- PhongChieu ------------------
+GO
+alter PROC USP_UpdatePhongChieu
+@IDPhongChieu VARCHAR(50), @TenPhongChieu VARCHAR(50), @IDManHinh VARCHAR(50), @SoChoNgoi INT, @TinhTrang VARCHAR(50), @SoHangGhe INT, @SoGheMotHang INT
+AS
+BEGIN
+	UPDATE dbo.PhongChieu 
+	SET IDPhongChieu = @IDPhongChieu, TenPhong = @TenPhongChieu, IDManHinh = @IDManHinh, SoChoNgoi = @SoChoNgoi, TinhTrang = @TinhTrang, SoHangGhe = @SoHangGhe, SoGheMotHang = @SoGheMotHang
+	WHERE IDPhongChieu = @IDPhongChieu
+END
+go
+Create PROC USP_InsertPhongChieu
+@IDPhongChieu nvarchar(50), @tenPhong nvarchar(MAX), @idMH nvarchar(50), @soChoNgoi INT, @tinhTrang nvarchar(50), @soHangGhe INT, @soGheMotHang INT
+AS	
+BEGIN
+	INSERT dbo.PhongChieu ( IDPhongChieu , TenPhong , IDManHinh , SoChoNgoi , TinhTrang , SoHangGhe , SoGheMotHang)
+	VALUES (@IDPhongChieu , @tenPhong , @idMH , @soChoNgoi , @tinhTrang , @soHangGhe , @soGheMotHang)
+END
+go
 -------------------- ADD------------------
 -- Add Thể Loại
 INSERT [dbo].[TheLoai] ([IDTheLoai], [TenTheLoai]) VALUES (N'TL01', N'Hành Động')

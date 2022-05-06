@@ -40,7 +40,7 @@ namespace pbl3
                 //    + ";Initial Catalog=" + txtdataName.Text
                 //    + ";Integrated Security=True";
                 connectionSTR = @"Data Source= TRUNG-NGUYEN\SQLEXPRESS"
-                   + ";Initial Catalog= nam3" 
+                   + ";Initial Catalog= nam3"
                    + ";Integrated Security=True";
             }
             bool result = data.ConnectionSQL(connectionSTR);

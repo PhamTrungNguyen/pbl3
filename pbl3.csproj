@@ -48,19 +48,35 @@
   <ItemGroup>
     <Compile Include="BLL\DinhDangPhimBLL.cs" />
     <Compile Include="BLL\LichChieuBLL.cs" />
+    <Compile Include="BLL\LoaiMHBLL.cs" />
     <Compile Include="BLL\PhimBLL.cs" />
+    <Compile Include="BLL\PhongChieuBLL.cs" />
     <Compile Include="BLL\TheLoaiBLL.cs" />
     <Compile Include="DAL\DinhDangPhimDAL.cs" />
     <Compile Include="DAL\LichChieuDAL.cs" />
+    <Compile Include="DAL\PhongChieuDAL.cs" />
     <Compile Include="DTO\CBBDinhDang.cs" />
     <Compile Include="DTO\CBBLoaiManHinh.cs" />
     <Compile Include="DTO\CBBPhim.cs" />
     <Compile Include="DTO\CBBPhongChieu.cs" />
+    <Compile Include="DAL\LoaiMHDAL.cs" />
     <Compile Include="View\Admin\DuLieu\AddDinhDang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Admin\DuLieu\AddDinhDang.Designer.cs">
       <DependentUpon>AddDinhDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\DuLieu\AddLoaiMH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin\DuLieu\AddLoaiMH.Designer.cs">
+      <DependentUpon>AddLoaiMH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\DuLieu\AddPhongChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin\DuLieu\AddPhongChieu.Designer.cs">
+      <DependentUpon>AddPhongChieu.cs</DependentUpon>
     </Compile>
     <Compile Include="View\MainView\Admin1.cs">
       <SubType>Form</SubType>
@@ -192,6 +208,12 @@
     </Compile>
     <EmbeddedResource Include="View\Admin\DuLieu\AddDinhDang.resx">
       <DependentUpon>AddDinhDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\DuLieu\AddLoaiMH.resx">
+      <DependentUpon>AddLoaiMH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\DuLieu\AddPhongChieu.resx">
+      <DependentUpon>AddPhongChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainView\Admin1.resx">
       <DependentUpon>Admin1.cs</DependentUpon>
